@@ -1,0 +1,3204 @@
+{
+    "Anime": [
+        {
+            "id": 23135,
+            "name": "star_wars_visions_volume_1"
+        },
+        {
+            "id": 15500,
+            "name": "senyoku_no_sigrdrifa"
+        },
+        {
+            "id": 6876,
+            "name": "mahoujin_guru_guru_(2017)"
+        },
+        {
+            "id": 24086,
+            "name": "spy_x_family_season_2"
+        },
+        {
+            "id": 17017,
+            "name": "getter_robo_go"
+        },
+        {
+            "id": 811,
+            "name": "one_piece_film:_z"
+        },
+        {
+            "id": 22848,
+            "name": "hitori_no_shita_the_outcast_series"
+        },
+        {
+            "id": 4438,
+            "name": "coyote_ragtime_show"
+        },
+        {
+            "id": 19658,
+            "name": "sabikui_bisco"
+        },
+        {
+            "id": 5256,
+            "name": "kaiketsu_zorori"
+        },
+        {
+            "id": 20934,
+            "name": "made_in_abyss:_retsujitsu_no_ougonkyo"
+        },
+        {
+            "id": 2651,
+            "name": "angel_cop"
+        },
+        {
+            "id": 3070,
+            "name": "yu-gi-oh!_zexal"
+        },
+        {
+            "id": 8817,
+            "name": "yuruyuri♪♪"
+        },
+        {
+            "id": 4995,
+            "name": "mazinkaiser"
+        },
+        {
+            "id": 1259,
+            "name": "shoujo_kakumei_utena"
+        },
+        {
+            "id": 5013,
+            "name": "hi_no_tori_series"
+        },
+        {
+            "id": 2891,
+            "name": "junketsu_no_maria"
+        },
+        {
+            "id": 1265,
+            "name": "sdf_macross:_do_you_remember_love?"
+        },
+        {
+            "id": 1397,
+            "name": "white_album"
+        },
+        {
+            "id": 5936,
+            "name": "youjo_senki"
+        },
+        {
+            "id": 10527,
+            "name": "watashi_ni_tenshi_ga_maiorita!"
+        },
+        {
+            "id": 1993,
+            "name": "tokyo_ghoul"
+        },
+        {
+            "id": 715,
+            "name": "niji-iro_hotaru"
+        },
+        {
+            "id": 8684,
+            "name": "mashin_eiyuuden_wataru"
+        },
+        {
+            "id": 20400,
+            "name": "summer_time_rendering"
+        },
+        {
+            "id": 15145,
+            "name": "gintama:_the_final"
+        },
+        {
+            "id": 1376,
+            "name": "ghost_slayers_ayashi"
+        },
+        {
+            "id": 1144,
+            "name": "robot_girls_z"
+        },
+        {
+            "id": 1624,
+            "name": "the_wings_of_honneamise"
+        },
+        {
+            "id": 3110,
+            "name": "mobile_suit_gundam:_the_origin"
+        },
+        {
+            "id": 2653,
+            "name": "oniisama_e"
+        },
+        {
+            "id": 2598,
+            "name": "the_dragon_dentist"
+        },
+        {
+            "id": 10456,
+            "name": "horizon_in_the_middle_of_nowhere"
+        },
+        {
+            "id": 958,
+            "name": "afro_samurai"
+        },
+        {
+            "id": 14435,
+            "name": "great_pretender"
+        },
+        {
+            "id": 1789,
+            "name": "highschool_of_the_dead"
+        },
+        {
+            "id": 5688,
+            "name": "the_king's_avatar"
+        },
+        {
+            "id": 25816,
+            "name": "make_heroine_ga_oosugiru!"
+        },
+        {
+            "id": 10775,
+            "name": "battle_athletes"
+        },
+        {
+            "id": 13735,
+            "name": "kono_subarashii_sekai_ni_shukufuku_wo!_movie"
+        },
+        {
+            "id": 859,
+            "name": "ookami-san_to_shichinin_no_nakamatachi"
+        },
+        {
+            "id": 14284,
+            "name": "princess_connect_re:dive_(game)"
+        },
+        {
+            "id": 11250,
+            "name": "wakaokami_wa_shougakusei!_(movie)"
+        },
+        {
+            "id": 166,
+            "name": "virus_buster_serge"
+        },
+        {
+            "id": 16651,
+            "name": "ufo_robot_grendizer"
+        },
+        {
+            "id": 5344,
+            "name": "shuumatsu_no_izetta"
+        },
+        {
+            "id": 4702,
+            "name": "tetsujin_28-go_series"
+        },
+        {
+            "id": 10803,
+            "name": "bakuretsu_hunters"
+        },
+        {
+            "id": 218,
+            "name": "tetsuwan_birdy_decode"
+        },
+        {
+            "id": 17450,
+            "name": "link_click"
+        },
+        {
+            "id": 9219,
+            "name": "mahou_shoujo_lyrical_nanoha_(2004)"
+        },
+        {
+            "id": 11214,
+            "name": "one-punch_man_2"
+        },
+        {
+            "id": 3384,
+            "name": "konjiki_no_gash_bell"
+        },
+        {
+            "id": 19496,
+            "name": "my_hero_academia_movie_3:_world_heroes_mission"
+        },
+        {
+            "id": 916,
+            "name": "blazblue"
+        },
+        {
+            "id": 7470,
+            "name": "bakuen_campus_guardress"
+        },
+        {
+            "id": 4215,
+            "name": "utawarerumono_itsuwari_no_kamen"
+        },
+        {
+            "id": 9095,
+            "name": "free!_dive_to_the_future"
+        },
+        {
+            "id": 12646,
+            "name": "naruto_shippuuden_movie_6:_road_to_ninja"
+        },
+        {
+            "id": 1114,
+            "name": "mikakunin_de_shinkoukei"
+        },
+        {
+            "id": 18397,
+            "name": "hajime_ningen_gyatorz"
+        },
+        {
+            "id": 24088,
+            "name": "hikikomari_kyuuketsuki_no_monmon"
+        },
+        {
+            "id": 22920,
+            "name": "mashle"
+        },
+        {
+            "id": 21408,
+            "name": "nijisanji"
+        },
+        {
+            "id": 2848,
+            "name": "baccano"
+        },
+        {
+            "id": 5892,
+            "name": "fog_hill_five_elements"
+        },
+        {
+            "id": 4422,
+            "name": "casshan"
+        },
+        {
+            "id": 3628,
+            "name": "psycho_pass_(movie)"
+        },
+        {
+            "id": 3799,
+            "name": "boruto:_naruto_the_movie"
+        },
+        {
+            "id": 12661,
+            "name": "hoshiai_no_sora"
+        },
+        {
+            "id": 3831,
+            "name": "monster_(2004)"
+        },
+        {
+            "id": 23616,
+            "name": "rakshasa_street_series"
+        },
+        {
+            "id": 1565,
+            "name": "mobile_suit_zeta_gundam:_a_new_translation"
+        },
+        {
+            "id": 22186,
+            "name": "bofuri_series"
+        },
+        {
+            "id": 16589,
+            "name": "horimiya_series"
+        },
+        {
+            "id": 11806,
+            "name": "ride_your_wave"
+        },
+        {
+            "id": 2665,
+            "name": "lucky_star"
+        },
+        {
+            "id": 227,
+            "name": "yes!_precure_5"
+        },
+        {
+            "id": 1787,
+            "name": "mahou_shoujo_madoka_magica_rebellion"
+        },
+        {
+            "id": 11946,
+            "name": "vinland_saga"
+        },
+        {
+            "id": 442,
+            "name": "top_wo_nerae!_gunbuster"
+        },
+        {
+            "id": 3618,
+            "name": "sket_dance"
+        },
+        {
+            "id": 1770,
+            "name": "blood-c_the_last_dark"
+        },
+        {
+            "id": 14754,
+            "name": "japan_sinks_(2020)"
+        },
+        {
+            "id": 21921,
+            "name": "sentai_daishikkaku"
+        },
+        {
+            "id": 12947,
+            "name": "birthday_wonderland"
+        },
+        {
+            "id": 7500,
+            "name": "the_king_of_braves_gaogaigar_final"
+        },
+        {
+            "id": 9296,
+            "name": "persona_4"
+        },
+        {
+            "id": 24416,
+            "name": "ika_musume_series"
+        },
+        {
+            "id": 6572,
+            "name": "katsugeki/touken_ranbu"
+        },
+        {
+            "id": 22579,
+            "name": "black_lagoon_series"
+        },
+        {
+            "id": 2156,
+            "name": "hayate_no_gotoku!"
+        },
+        {
+            "id": 19284,
+            "name": "scissor_seven_s2"
+        },
+        {
+            "id": 19466,
+            "name": "jigokuraku"
+        },
+        {
+            "id": 4374,
+            "name": "sayonara_galaxy_express_999"
+        },
+        {
+            "id": 2684,
+            "name": "2x2=shinobuden"
+        },
+        {
+            "id": 460,
+            "name": "animatrix"
+        },
+        {
+            "id": 18964,
+            "name": "kaguya-sama:_love_is_war_season_3"
+        },
+        {
+            "id": 10336,
+            "name": "saber_marionette_r"
+        },
+        {
+            "id": 648,
+            "name": "girls_und_panzer"
+        },
+        {
+            "id": 13757,
+            "name": "yahari_ore_no_seishun_love_comedy_wa_machigatteiru_series"
+        },
+        {
+            "id": 23199,
+            "name": "spider-verse"
+        },
+        {
+            "id": 2516,
+            "name": "shirobako"
+        },
+        {
+            "id": 19258,
+            "name": "super_crooks"
+        },
+        {
+            "id": 3553,
+            "name": "kiki's_delivery_service"
+        },
+        {
+            "id": 22872,
+            "name": "tousouchuu:_great_mission"
+        },
+        {
+            "id": 19814,
+            "name": "genshin_impact"
+        },
+        {
+            "id": 3150,
+            "name": "steven_universe"
+        },
+        {
+            "id": 1499,
+            "name": "jojo's_bizarre_adventure:_stardust_crusaders"
+        },
+        {
+            "id": 17218,
+            "name": "love_live!_superstar!!"
+        },
+        {
+            "id": 13299,
+            "name": "hazbin_hotel"
+        },
+        {
+            "id": 1638,
+            "name": "anne_of_green_gables"
+        },
+        {
+            "id": 17157,
+            "name": "fate/stay_night:_heaven's_feel_iii._spring_song"
+        },
+        {
+            "id": 340,
+            "name": "zetsuen_no_tempest"
+        },
+        {
+            "id": 20881,
+            "name": "bastard_series"
+        },
+        {
+            "id": 158,
+            "name": "sasami-san@ganbaranai"
+        },
+        {
+            "id": 1000,
+            "name": "suite_precure"
+        },
+        {
+            "id": 325,
+            "name": "no.6"
+        },
+        {
+            "id": 9974,
+            "name": "gensou_mangekyou_~the_memories_of_phantasm~"
+        },
+        {
+            "id": 688,
+            "name": "tales_of_the_abyss"
+        },
+        {
+            "id": 22796,
+            "name": "tensei_shitara_slime_datta_ken:_guren_no_kizuna-hen"
+        },
+        {
+            "id": 4407,
+            "name": "tales_of_symphonia_the_animation"
+        },
+        {
+            "id": 1971,
+            "name": "tatami_galaxy"
+        },
+        {
+            "id": 17860,
+            "name": "fena:_pirate_princess"
+        },
+        {
+            "id": 15902,
+            "name": "log_horizon_series"
+        },
+        {
+            "id": 24817,
+            "name": "yoru_no_kurage_wa_oyogenai"
+        },
+        {
+            "id": 16095,
+            "name": "animaniacs_(1993)"
+        },
+        {
+            "id": 311,
+            "name": "full_metal_panic_fumoffu"
+        },
+        {
+            "id": 8607,
+            "name": "hisone_to_masotan"
+        },
+        {
+            "id": 11842,
+            "name": "kizumonogatari_part_1:_tekketsu"
+        },
+        {
+            "id": 13223,
+            "name": "gun_x_sword"
+        },
+        {
+            "id": 13878,
+            "name": "gleipnir"
+        },
+        {
+            "id": 16438,
+            "name": "galaxy_express_999_(1979)"
+        },
+        {
+            "id": 447,
+            "name": "dokidoki!_precure"
+        },
+        {
+            "id": 21368,
+            "name": "dominion_tank_police_series"
+        },
+        {
+            "id": 2423,
+            "name": "nanatsu_no_taizai"
+        },
+        {
+            "id": 8071,
+            "name": "fate/extra_last_encore"
+        },
+        {
+            "id": 2414,
+            "name": "sora_no_method"
+        },
+        {
+            "id": 20687,
+            "name": "shikabane_hime_aka"
+        },
+        {
+            "id": 24647,
+            "name": "mashle_season_2"
+        },
+        {
+            "id": 21476,
+            "name": "the_legend_of_hei_movie"
+        },
+        {
+            "id": 13300,
+            "name": "promare"
+        },
+        {
+            "id": 2280,
+            "name": "millennium_actress"
+        },
+        {
+            "id": 2826,
+            "name": "blue_submarine_no_6"
+        },
+        {
+            "id": 1455,
+            "name": "the_soultaker"
+        },
+        {
+            "id": 23550,
+            "name": "hitsugi_no_chaika_series"
+        },
+        {
+            "id": 6487,
+            "name": "mary_and_the_witch's_flower"
+        },
+        {
+            "id": 14324,
+            "name": "youkai_ningen_bem_series"
+        },
+        {
+            "id": 6394,
+            "name": "re:_creators"
+        },
+        {
+            "id": 1390,
+            "name": "choju_kishin_dancougar"
+        },
+        {
+            "id": 21844,
+            "name": "primal_season_2"
+        },
+        {
+            "id": 4090,
+            "name": "street_fighter_alpha"
+        },
+        {
+            "id": 1268,
+            "name": "martian_successor_nadesico"
+        },
+        {
+            "id": 5156,
+            "name": "moomin_series"
+        },
+        {
+            "id": 4089,
+            "name": "fairy_tail_the_movie_houou_no_miko"
+        },
+        {
+            "id": 23720,
+            "name": "kyoukai_senki_series"
+        },
+        {
+            "id": 11533,
+            "name": "miru_tights"
+        },
+        {
+            "id": 20160,
+            "name": "rwby_hyousetsu_teikoku"
+        },
+        {
+            "id": 25431,
+            "name": "link_click_series"
+        },
+        {
+            "id": 1377,
+            "name": "kemonozume"
+        },
+        {
+            "id": 7220,
+            "name": "idolish_7"
+        },
+        {
+            "id": 4924,
+            "name": "granblue_fantasy"
+        },
+        {
+            "id": 13195,
+            "name": "pokemon:_twilight_wings"
+        },
+        {
+            "id": 7911,
+            "name": "gintama.:_shirogane_no_tamashii-hen"
+        },
+        {
+            "id": 11348,
+            "name": "kuroko_no_basket:_second_season"
+        },
+        {
+            "id": 18339,
+            "name": "jujutsu_kaisen_0"
+        },
+        {
+            "id": 7336,
+            "name": "sword_art_online:_ordinal_scale"
+        },
+        {
+            "id": 257,
+            "name": "katanagatari"
+        },
+        {
+            "id": 9186,
+            "name": "dog_days''"
+        },
+        {
+            "id": 15876,
+            "name": "nils_no_fushigi_na_tabi"
+        },
+        {
+            "id": 2845,
+            "name": "durarara!!"
+        },
+        {
+            "id": 8239,
+            "name": "galaxy_fraulein_yuna"
+        },
+        {
+            "id": 13386,
+            "name": "combattler_v"
+        },
+        {
+            "id": 8255,
+            "name": "blood+"
+        },
+        {
+            "id": 428,
+            "name": "the_super_dimension_fortress_macross"
+        },
+        {
+            "id": 24774,
+            "name": "masters_of_the_universe_series"
+        },
+        {
+            "id": 11349,
+            "name": "kuroko_no_basket:_third_season"
+        },
+        {
+            "id": 3943,
+            "name": "owari_no_seraph_nagoya_kessen-hen"
+        },
+        {
+            "id": 14611,
+            "name": "abenobashi_mahou_shotengai"
+        },
+        {
+            "id": 1730,
+            "name": "peter_pan_no_bouken"
+        },
+        {
+            "id": 8862,
+            "name": "cutey_honey_flash"
+        },
+        {
+            "id": 364,
+            "name": "blood:_the_last_vampire"
+        },
+        {
+            "id": 1623,
+            "name": "thundercats"
+        },
+        {
+            "id": 910,
+            "name": "yuusha_ni_narenakatta_ore_wa_shibushibu_shuushoku_wo_ketsui_shimashita."
+        },
+        {
+            "id": 5349,
+            "name": "touken_ranbu:_hanamaru"
+        },
+        {
+            "id": 2995,
+            "name": "sonic_cd"
+        },
+        {
+            "id": 10178,
+            "name": "bannou_bunka_neko-musume"
+        },
+        {
+            "id": 7918,
+            "name": "song_of_the_sea"
+        },
+        {
+            "id": 20538,
+            "name": "shuffle!_series"
+        },
+        {
+            "id": 8018,
+            "name": "major"
+        },
+        {
+            "id": 3300,
+            "name": "sekirei"
+        },
+        {
+            "id": 474,
+            "name": "hataraku_maou-sama!"
+        },
+        {
+            "id": 1669,
+            "name": "senki_zesshou_symphogear"
+        },
+        {
+            "id": 9588,
+            "name": "darker_than_black:_kuro_no_keiyakusha"
+        },
+        {
+            "id": 14522,
+            "name": "her_blue_sky"
+        },
+        {
+            "id": 20906,
+            "name": "eureka_seven_-_hi-evolution_3"
+        },
+        {
+            "id": 10942,
+            "name": "zoids_series"
+        },
+        {
+            "id": 3223,
+            "name": "download_namiamidabutsu_wa_ai_no_uta"
+        },
+        {
+            "id": 1017,
+            "name": "fate/stay_night"
+        },
+        {
+            "id": 8510,
+            "name": "to_be_heroine"
+        },
+        {
+            "id": 374,
+            "name": "casshern_sins"
+        },
+        {
+            "id": 15548,
+            "name": "akudama_drive"
+        },
+        {
+            "id": 19492,
+            "name": "fate/grand_order_camelot_paladin_agateram"
+        },
+        {
+            "id": 24463,
+            "name": "mobile_suit_sd_gundam"
+        },
+        {
+            "id": 599,
+            "name": "peter_pan"
+        },
+        {
+            "id": 12645,
+            "name": "naruto_shippuuden_movie_5:_blood_prison"
+        },
+        {
+            "id": 24631,
+            "name": "cardfight!!_vanguard_divinez"
+        },
+        {
+            "id": 1068,
+            "name": "sacred_seven"
+        },
+        {
+            "id": 13337,
+            "name": "healin'_good_precure"
+        },
+        {
+            "id": 16831,
+            "name": "hustle_punch"
+        },
+        {
+            "id": 140,
+            "name": "ghost_in_the_shell_innocence"
+        },
+        {
+            "id": 7904,
+            "name": "inazuma_eleven_go_chrono_stone"
+        },
+        {
+            "id": 556,
+            "name": "free!"
+        },
+        {
+            "id": 4941,
+            "name": "the_unlimited_-_hyoubu_kyousuke"
+        },
+        {
+            "id": 24454,
+            "name": "spy_x_family_code:_white"
+        },
+        {
+            "id": 5195,
+            "name": "high_speed!"
+        },
+        {
+            "id": 1815,
+            "name": "the_princess_and_the_frog"
+        },
+        {
+            "id": 24228,
+            "name": "gridman_universe"
+        },
+        {
+            "id": 3942,
+            "name": "rakudai_kishi_no_cavalry"
+        },
+        {
+            "id": 16455,
+            "name": "sazan_eyes:_seima_densetsu"
+        },
+        {
+            "id": 1221,
+            "name": "buddy_complex"
+        },
+        {
+            "id": 13519,
+            "name": "glitch_techs"
+        },
+        {
+            "id": 7623,
+            "name": "working!!"
+        },
+        {
+            "id": 3672,
+            "name": "whisper_of_the_heart"
+        },
+        {
+            "id": 401,
+            "name": "birth"
+        },
+        {
+            "id": 14042,
+            "name": "hitori_no_shita_the_outcast_3"
+        },
+        {
+            "id": 3962,
+            "name": "jarinko_chie"
+        },
+        {
+            "id": 83,
+            "name": "suisei_no_gargantia"
+        },
+        {
+            "id": 1423,
+            "name": "petite_princess_yucie"
+        },
+        {
+            "id": 9768,
+            "name": "superman"
+        },
+        {
+            "id": 5369,
+            "name": "vivid_strike!"
+        },
+        {
+            "id": 18395,
+            "name": "bouken_ou_beet"
+        },
+        {
+            "id": 7191,
+            "name": "kantai_collection:_the_movie"
+        },
+        {
+            "id": 11187,
+            "name": "beyblade_burst_gachi"
+        },
+        {
+            "id": 1050,
+            "name": "psycho_pass"
+        },
+        {
+            "id": 17592,
+            "name": "castlevania_season_1"
+        },
+        {
+            "id": 2569,
+            "name": "nintama_rantaro"
+        },
+        {
+            "id": 6176,
+            "name": "ok_k.o.!_let's_be_heroes"
+        },
+        {
+            "id": 8628,
+            "name": "hanaukyou_maid-tai:_la_verite"
+        },
+        {
+            "id": 1581,
+            "name": "mushishi"
+        },
+        {
+            "id": 19288,
+            "name": "da_wang_rao_ming"
+        },
+        {
+            "id": 25756,
+            "name": "rakshasa_street_season_three"
+        },
+        {
+            "id": 3351,
+            "name": "outlaw_star"
+        },
+        {
+            "id": 11844,
+            "name": "kizumonogatari_part_3:_reiketsu"
+        },
+        {
+            "id": 7868,
+            "name": "c3_cube_x_cursed_x_curious"
+        },
+        {
+            "id": 3586,
+            "name": "rokka_no_yuusha"
+        },
+        {
+            "id": 20506,
+            "name": "bubble"
+        },
+        {
+            "id": 3718,
+            "name": "utawarerumono"
+        },
+        {
+            "id": 23489,
+            "name": "cardfight!!_vanguard_will+dress_season_3"
+        },
+        {
+            "id": 10194,
+            "name": "read_or_die_ova"
+        },
+        {
+            "id": 354,
+            "name": "mobile_suit_gundam_0083:_stardust_memory"
+        },
+        {
+            "id": 2343,
+            "name": "needless"
+        },
+        {
+            "id": 5052,
+            "name": "regalia_the_three_sacred_stars"
+        },
+        {
+            "id": 10145,
+            "name": "haikyuu!!_season_3"
+        },
+        {
+            "id": 22394,
+            "name": "spider-man:_across_the_spider-verse"
+        },
+        {
+            "id": 20555,
+            "name": "gyokou_no_nikuko-chan"
+        },
+        {
+            "id": 20830,
+            "name": "vs_knight_ramune_&_40_fire"
+        },
+        {
+            "id": 13922,
+            "name": "kaguya-sama:_love_is_war_season_2"
+        },
+        {
+            "id": 4591,
+            "name": "uchuu_patrol_luluco"
+        },
+        {
+            "id": 18331,
+            "name": "kimi_ni_todoke_series"
+        },
+        {
+            "id": 17786,
+            "name": "my_hero_academia_movie_2:_heroes_rising"
+        },
+        {
+            "id": 17523,
+            "name": "invincible"
+        },
+        {
+            "id": 22149,
+            "name": "nier_automata_ver1.1a"
+        },
+        {
+            "id": 4439,
+            "name": "dokkoida"
+        },
+        {
+            "id": 14951,
+            "name": "mobile_suit_gundam_iii:_encounters_in_space"
+        },
+        {
+            "id": 23915,
+            "name": "hi_no_tori:_eden_no_sora"
+        },
+        {
+            "id": 2158,
+            "name": "bokurano"
+        },
+        {
+            "id": 1681,
+            "name": "kenzen_robo_daimidaler"
+        },
+        {
+            "id": 23088,
+            "name": "uchouten_kazoku_series"
+        },
+        {
+            "id": 24070,
+            "name": "tate_no_yuusha_no_nariagari_season_3"
+        },
+        {
+            "id": 1932,
+            "name": "one_piece:_baron_omatsuri_and_the_secret_island"
+        },
+        {
+            "id": 7838,
+            "name": "baki_the_grappler"
+        },
+        {
+            "id": 20782,
+            "name": "mobile_suit_gundam:_cucuruz_doan's_island"
+        },
+        {
+            "id": 15467,
+            "name": "assault_lily:_bouquet"
+        },
+        {
+            "id": 16446,
+            "name": "world_trigger_second_season"
+        },
+        {
+            "id": 9451,
+            "name": "flcl_alternative"
+        },
+        {
+            "id": 1189,
+            "name": "nisekoi"
+        },
+        {
+            "id": 7973,
+            "name": "the_secret_of_kells"
+        },
+        {
+            "id": 21253,
+            "name": "treasure_island_(1988)"
+        },
+        {
+            "id": 4165,
+            "name": "miss_hokusai"
+        },
+        {
+            "id": 48,
+            "name": "aikatsu!"
+        },
+        {
+            "id": 3916,
+            "name": "lupin_iii_part_iii"
+        },
+        {
+            "id": 4060,
+            "name": "pom_poko"
+        },
+        {
+            "id": 2298,
+            "name": "pokemon_xy:_mega_evolution"
+        },
+        {
+            "id": 25237,
+            "name": "wind_breaker"
+        },
+        {
+            "id": 17994,
+            "name": "kageki_shoujo"
+        },
+        {
+            "id": 10939,
+            "name": "moomin_(1990)"
+        },
+        {
+            "id": 7625,
+            "name": "working'!!"
+        },
+        {
+            "id": 686,
+            "name": "shaman_king"
+        },
+        {
+            "id": 15489,
+            "name": "dungeon_ni_deai_o_motomeru_no_wa_machigatte_iru_darouka_iii"
+        },
+        {
+            "id": 3654,
+            "name": "arrietty"
+        },
+        {
+            "id": 684,
+            "name": "black_cat"
+        },
+        {
+            "id": 23865,
+            "name": "bishoujo_senshi_sailor_moon_cosmos"
+        },
+        {
+            "id": 382,
+            "name": "dantalian_no_shoka"
+        },
+        {
+            "id": 19663,
+            "name": "princess_connect_re:dive_season_1"
+        },
+        {
+            "id": 11344,
+            "name": "geidai_animation"
+        },
+        {
+            "id": 1630,
+            "name": "hidamari_sketch_x365"
+        },
+        {
+            "id": 1741,
+            "name": "persona_3_the_movie"
+        },
+        {
+            "id": 13009,
+            "name": "code_geass_fukkatsu_no_lelouch"
+        },
+        {
+            "id": 21394,
+            "name": "drifting_home"
+        },
+        {
+            "id": 3903,
+            "name": "noragami_aragoto"
+        },
+        {
+            "id": 5468,
+            "name": "the_great_passage"
+        },
+        {
+            "id": 12034,
+            "name": "bem"
+        },
+        {
+            "id": 4278,
+            "name": "dimension_w"
+        },
+        {
+            "id": 3582,
+            "name": "ushio_to_tora"
+        },
+        {
+            "id": 4704,
+            "name": "tetsujin_28-go_(1980)"
+        },
+        {
+            "id": 6566,
+            "name": "daikuu_maryuu_gaiking"
+        },
+        {
+            "id": 16801,
+            "name": "hololive_alternative"
+        },
+        {
+            "id": 6867,
+            "name": "princess_principal"
+        },
+        {
+            "id": 51,
+            "name": "the_thief_and_the_cobbler"
+        },
+        {
+            "id": 6838,
+            "name": "made_in_abyss"
+        },
+        {
+            "id": 1649,
+            "name": "project_a-ko"
+        },
+        {
+            "id": 6142,
+            "name": "lupin_iii:_chikemuri_no_ishikawa_goemon"
+        },
+        {
+            "id": 5067,
+            "name": "legend_of_crystania"
+        },
+        {
+            "id": 4721,
+            "name": "tetsuwan_birdy"
+        },
+        {
+            "id": 3679,
+            "name": "the_fox_and_the_hound"
+        },
+        {
+            "id": 1944,
+            "name": "xxxholic"
+        },
+        {
+            "id": 7744,
+            "name": "rockman_exe"
+        },
+        {
+            "id": 10937,
+            "name": "one_piece:_stampede"
+        },
+        {
+            "id": 12288,
+            "name": "fate/stay_night:_heaven's_feel_i._presage_flower"
+        },
+        {
+            "id": 2326,
+            "name": "record_of_lodoss_war"
+        },
+        {
+            "id": 14773,
+            "name": "kanojo_okarishimasu"
+        },
+        {
+            "id": 4292,
+            "name": "kono_subarashii_sekai_ni_shukufuku_wo!"
+        },
+        {
+            "id": 889,
+            "name": "mobile_police_patlabor_2_the_movie"
+        },
+        {
+            "id": 4958,
+            "name": "mobile_police_patlabor:_early_days"
+        },
+        {
+            "id": 4490,
+            "name": "one_piece_film:_gold"
+        },
+        {
+            "id": 9048,
+            "name": "banana_fish"
+        },
+        {
+            "id": 4664,
+            "name": "aikatsu_stars!"
+        },
+        {
+            "id": 679,
+            "name": "macross_plus"
+        },
+        {
+            "id": 12647,
+            "name": "naruto_shippuuden_movie_7:_the_last"
+        },
+        {
+            "id": 1307,
+            "name": "mazinger_z"
+        },
+        {
+            "id": 25082,
+            "name": "muteki_koujin_daitarn_3"
+        },
+        {
+            "id": 23543,
+            "name": "bleach:_thousand_year_blood_war_arc_season_2"
+        },
+        {
+            "id": 13117,
+            "name": "fate/strange_fake"
+        },
+        {
+            "id": 5663,
+            "name": "ryuuseiki_gakusaver"
+        },
+        {
+            "id": 9247,
+            "name": "doraemon:_nobita's_treasure_island"
+        },
+        {
+            "id": 3941,
+            "name": "kyoukai_no_kanata_movie:_i'll_be_here_-_mirai-hen"
+        },
+        {
+            "id": 4639,
+            "name": "kiznaiver"
+        },
+        {
+            "id": 3600,
+            "name": "aeon_flux"
+        },
+        {
+            "id": 1542,
+            "name": "area_88"
+        },
+        {
+            "id": 25400,
+            "name": "mahou_no_princess_minky_momo_series"
+        },
+        {
+            "id": 1236,
+            "name": "mobile_suit_gundam_wing"
+        },
+        {
+            "id": 1750,
+            "name": "tales_from_earthsea"
+        },
+        {
+            "id": 733,
+            "name": "berserk:_the_golden_age_arc"
+        },
+        {
+            "id": 654,
+            "name": "yumekui_merry"
+        },
+        {
+            "id": 1256,
+            "name": "mighty_orbots"
+        },
+        {
+            "id": 4914,
+            "name": "panda_kopanda"
+        },
+        {
+            "id": 3348,
+            "name": "panzer_world_galient"
+        },
+        {
+            "id": 8905,
+            "name": "yuuki_yuuna_wa_yuusha_de_aru"
+        },
+        {
+            "id": 19003,
+            "name": "professor_layton_series"
+        },
+        {
+            "id": 3694,
+            "name": "my_neighbor_totoro"
+        },
+        {
+            "id": 1751,
+            "name": "le_chevalier_d'eon"
+        },
+        {
+            "id": 944,
+            "name": "senran_kagura"
+        },
+        {
+            "id": 1537,
+            "name": "seirei_no_moribito"
+        },
+        {
+            "id": 16336,
+            "name": "doraemon:_nobita's_new_dinosaur"
+        },
+        {
+            "id": 14,
+            "name": "shinsekai_yori"
+        },
+        {
+            "id": 330,
+            "name": "yondemasu_yo_azazel-san"
+        },
+        {
+            "id": 25788,
+            "name": "tsue_to_tsurugi_no_wistoria"
+        },
+        {
+            "id": 6090,
+            "name": "vampire_hunter_d_bloodlust"
+        },
+        {
+            "id": 19042,
+            "name": "shounen_ninja_kaze_no_fujimaru"
+        },
+        {
+            "id": 2070,
+            "name": "metropolis"
+        },
+        {
+            "id": 592,
+            "name": "tantei_opera_milky_holmes"
+        },
+        {
+            "id": 4114,
+            "name": "chibi_maruko-chan"
+        },
+        {
+            "id": 17128,
+            "name": "devilman_(1972)"
+        },
+        {
+            "id": 13198,
+            "name": "midori_no_makibao"
+        },
+        {
+            "id": 358,
+            "name": "macross_frontier"
+        },
+        {
+            "id": 5216,
+            "name": "persona_5:_the_animation"
+        },
+        {
+            "id": 10533,
+            "name": "the_promised_neverland"
+        },
+        {
+            "id": 4154,
+            "name": "bakemono_no_ko"
+        },
+        {
+            "id": 1957,
+            "name": "mahou_shoujo_lyrical_nanoha__the_movie_1st"
+        },
+        {
+            "id": 9347,
+            "name": "roger_rabbit"
+        },
+        {
+            "id": 18896,
+            "name": "mashin_eiyuuden_wataru_2"
+        },
+        {
+            "id": 1232,
+            "name": "tatakau_shisho"
+        },
+        {
+            "id": 1745,
+            "name": "the_sky_crawlers"
+        },
+        {
+            "id": 11350,
+            "name": "kuroko_no_basket"
+        },
+        {
+            "id": 14142,
+            "name": "beyblade_burst_super_king"
+        },
+        {
+            "id": 1117,
+            "name": "noragami"
+        },
+        {
+            "id": 7641,
+            "name": "paniponi_dash"
+        },
+        {
+            "id": 18078,
+            "name": "pokemon_movie_23:_coco"
+        },
+        {
+            "id": 21855,
+            "name": "crayon_shinchan_mononoke_ninja_chinpūden"
+        },
+        {
+            "id": 269,
+            "name": "real_drive"
+        },
+        {
+            "id": 2002,
+            "name": "aldnoah_zero"
+        },
+        {
+            "id": 2227,
+            "name": "voltage_fighter_gowcaizer"
+        },
+        {
+            "id": 7711,
+            "name": "gintama'"
+        },
+        {
+            "id": 17085,
+            "name": "cardfight!!_vanguard_overdress"
+        },
+        {
+            "id": 17260,
+            "name": "86"
+        },
+        {
+            "id": 5638,
+            "name": "escaflowne_(movie)"
+        },
+        {
+            "id": 13174,
+            "name": "22/7_series"
+        },
+        {
+            "id": 10572,
+            "name": "starship_girl_yamamoto_yohko_(1999)"
+        },
+        {
+            "id": 22501,
+            "name": "moon_girl_and_devil_dinosaur"
+        },
+        {
+            "id": 3854,
+            "name": "popolocrois"
+        },
+        {
+            "id": 18086,
+            "name": "pokemon_movie_5:_mizu_no_miyako_no_mamorigami_latias_to_latios"
+        },
+        {
+            "id": 545,
+            "name": "mobile_suit_gundam_00_the_movie_-a_wakening_of_the_trailblazer-"
+        },
+        {
+            "id": 871,
+            "name": "fresh_precure!"
+        },
+        {
+            "id": 10770,
+            "name": "penguin_highway"
+        },
+        {
+            "id": 20293,
+            "name": "kawaii_dake_ja_nai_shikimori-san"
+        },
+        {
+            "id": 3748,
+            "name": "ikki_tousen:_dragon_destiny"
+        },
+        {
+            "id": 4208,
+            "name": "sousei_no_aquarion_evol"
+        },
+        {
+            "id": 22868,
+            "name": "the_lion_king_series"
+        },
+        {
+            "id": 20985,
+            "name": "tensei_kenja_no_isekai_life"
+        },
+        {
+            "id": 1913,
+            "name": "kite_liberator"
+        },
+        {
+            "id": 2006,
+            "name": "ryuusei_no_rockman"
+        },
+        {
+            "id": 3595,
+            "name": "sore_ga_seiyuu!"
+        },
+        {
+            "id": 7735,
+            "name": "iczer_reborn"
+        },
+        {
+            "id": 1940,
+            "name": "shinryaku!_ika_musume"
+        },
+        {
+            "id": 15544,
+            "name": "strike_witches:_road_to_berlin"
+        },
+        {
+            "id": 3841,
+            "name": "manie_manie:_meikyuu_monogatari"
+        },
+        {
+            "id": 2682,
+            "name": "highschool_dxd_new"
+        },
+        {
+            "id": 1746,
+            "name": "roujin_z"
+        },
+        {
+            "id": 4513,
+            "name": "terraformars"
+        },
+        {
+            "id": 21336,
+            "name": "yoasobi_music_videos"
+        },
+        {
+            "id": 3436,
+            "name": "the_legend_of_the_legendary_heroes"
+        },
+        {
+            "id": 248,
+            "name": "tengen_toppa_gurren_lagann:_lagann-hen"
+        },
+        {
+            "id": 18818,
+            "name": "kyoukai_senki"
+        },
+        {
+            "id": 16217,
+            "name": "wolfwalkers"
+        },
+        {
+            "id": 988,
+            "name": "kiddy_girl-and"
+        },
+        {
+            "id": 4243,
+            "name": "mobile_suit_gundam_thunderbolt"
+        },
+        {
+            "id": 2409,
+            "name": "garo_hono_no_kokuin"
+        },
+        {
+            "id": 3283,
+            "name": "plastic_memories"
+        },
+        {
+            "id": 13239,
+            "name": "amphibia"
+        },
+        {
+            "id": 2323,
+            "name": "lupin_iii_castle_of_cagliostro"
+        },
+        {
+            "id": 11463,
+            "name": "avatar:_the_last_airbender_book_one"
+        },
+        {
+            "id": 2507,
+            "name": "dirty_pair:_project_eden"
+        },
+        {
+            "id": 3630,
+            "name": "ni_no_kuni"
+        },
+        {
+            "id": 527,
+            "name": "ghost_in_the_shell_stand_alone_complex_2nd_gig"
+        },
+        {
+            "id": 803,
+            "name": "kiniro_mosaic"
+        },
+        {
+            "id": 2466,
+            "name": "zoku_sayonara_zetsubou_sensei"
+        },
+        {
+            "id": 3114,
+            "name": "the_batman"
+        },
+        {
+            "id": 4236,
+            "name": "kenichi_the_mightiest_disciple"
+        },
+        {
+            "id": 2384,
+            "name": "flame_of_recca"
+        },
+        {
+            "id": 2753,
+            "name": "cencoroll"
+        },
+        {
+            "id": 1148,
+            "name": "generator_gawl"
+        },
+        {
+            "id": 2436,
+            "name": "captain_tsubasa"
+        },
+        {
+            "id": 22589,
+            "name": "maken_ki!_series"
+        },
+        {
+            "id": 17040,
+            "name": "great_mazinger"
+        },
+        {
+            "id": 16823,
+            "name": "uchuu_kaizoku_captain_harlock"
+        },
+        {
+            "id": 3280,
+            "name": "owari_no_seraph"
+        },
+        {
+            "id": 4908,
+            "name": "girls_und_panzer_der_film"
+        },
+        {
+            "id": 7541,
+            "name": "golgo_13_the_professional"
+        },
+        {
+            "id": 16333,
+            "name": "skate-leading☆stars"
+        },
+        {
+            "id": 5253,
+            "name": "pokemon_generations"
+        },
+        {
+            "id": 17443,
+            "name": "evangelion_1.0:_you_are_(not)_alone"
+        },
+        {
+            "id": 7880,
+            "name": "tokyo_mew_mew"
+        },
+        {
+            "id": 18382,
+            "name": "the_witcher_nightmare_of_the_wolf"
+        },
+        {
+            "id": 2551,
+            "name": "his_and_her_circumstances"
+        },
+        {
+            "id": 5422,
+            "name": "sonic_x"
+        },
+        {
+            "id": 25144,
+            "name": "x-men_97"
+        },
+        {
+            "id": 16506,
+            "name": "edens_zero"
+        },
+        {
+            "id": 22399,
+            "name": "zuoshou_shanglan"
+        },
+        {
+            "id": 3361,
+            "name": "seijuushi_bismark"
+        },
+        {
+            "id": 13747,
+            "name": "naruto_movie_2:_legend_of_the_stone_of_gelel"
+        },
+        {
+            "id": 17063,
+            "name": "kingdom_series"
+        },
+        {
+            "id": 2277,
+            "name": "mirai_nikki"
+        },
+        {
+            "id": 4997,
+            "name": "crying_freeman"
+        },
+        {
+            "id": 4284,
+            "name": "mahou_shoujo_nante_mou_ii_desukara"
+        },
+        {
+            "id": 12287,
+            "name": "fate/stay_night:_heaven's_feel_ii._lost_butterfly"
+        },
+        {
+            "id": 2317,
+            "name": "beck_mongolian_chop_squad"
+        },
+        {
+            "id": 7658,
+            "name": "dual!_parallel_trouble_adventure"
+        },
+        {
+            "id": 1793,
+            "name": "soredemo_machi_wa_mawatteiru"
+        },
+        {
+            "id": 23479,
+            "name": "rurouni_kenshin_2023"
+        },
+        {
+            "id": 16406,
+            "name": "magnerobo_ga-keen"
+        },
+        {
+            "id": 25081,
+            "name": "muteki_choujin_zambot_3"
+        },
+        {
+            "id": 22181,
+            "name": "tondemo_skill_de_isekai_hourou_meshi"
+        },
+        {
+            "id": 15057,
+            "name": "yawara!"
+        },
+        {
+            "id": 2430,
+            "name": "amagi_brilliant_park"
+        },
+        {
+            "id": 4002,
+            "name": "the_big_o"
+        },
+        {
+            "id": 10242,
+            "name": "hero_mask"
+        },
+        {
+            "id": 372,
+            "name": "toki_wo_kakeru_shoujo"
+        },
+        {
+            "id": 20629,
+            "name": "mononoke_series"
+        },
+        {
+            "id": 9741,
+            "name": "uchi_no_maid_ga_uzasugiru!"
+        },
+        {
+            "id": 2779,
+            "name": "yatterman_(2008)"
+        },
+        {
+            "id": 12243,
+            "name": "cannon_busters"
+        },
+        {
+            "id": 2630,
+            "name": "gall_force"
+        },
+        {
+            "id": 23544,
+            "name": "nanatsu_no_maken_ga_shihai_suru"
+        },
+        {
+            "id": 10992,
+            "name": "black_rock_shooter_ova"
+        },
+        {
+            "id": 6171,
+            "name": "mahou_shoujo_lyrical_nanoha_a's"
+        },
+        {
+            "id": 23134,
+            "name": "star_wars_visions_volume_2"
+        },
+        {
+            "id": 4354,
+            "name": "the_third_the_girl_with_the_blue_eye"
+        },
+        {
+            "id": 1489,
+            "name": "shinkon_gattai_godannar"
+        },
+        {
+            "id": 3520,
+            "name": "round_vernian_vifam"
+        },
+        {
+            "id": 5656,
+            "name": "x_series"
+        },
+        {
+            "id": 5507,
+            "name": "nanbaka"
+        },
+        {
+            "id": 16365,
+            "name": "brain_powerd"
+        },
+        {
+            "id": 125,
+            "name": "uchouten_kazoku"
+        },
+        {
+            "id": 10460,
+            "name": "lord_el-melloi_ii-sei_no_jikenbo"
+        },
+        {
+            "id": 3350,
+            "name": "angelic_layer"
+        },
+        {
+            "id": 13132,
+            "name": "id_invaded"
+        },
+        {
+            "id": 9765,
+            "name": "release_the_spyce"
+        },
+        {
+            "id": 132,
+            "name": "genius_party"
+        },
+        {
+            "id": 2671,
+            "name": "mind_game"
+        },
+        {
+            "id": 1821,
+            "name": "paprika"
+        },
+        {
+            "id": 9712,
+            "name": "seishun_buta_yarou_wa_bunny_girl_senpai_no_yume_wo_minai"
+        },
+        {
+            "id": 233,
+            "name": "the_brave_express_might_gaine"
+        },
+        {
+            "id": 653,
+            "name": "ergo_proxy"
+        },
+        {
+            "id": 3980,
+            "name": "xxxholic:_a_midsummer_night's_dream"
+        },
+        {
+            "id": 18823,
+            "name": "the_anthem_of_the_heart"
+        },
+        {
+            "id": 18145,
+            "name": "cider_no_you_ni_kotoba_ga_wakiagaru"
+        },
+        {
+            "id": 5261,
+            "name": "spirit_of_wonder"
+        },
+        {
+            "id": 1225,
+            "name": "aoki_ryusei_spt_layzner"
+        },
+        {
+            "id": 6871,
+            "name": "new_game!!"
+        },
+        {
+            "id": 12247,
+            "name": "to_love_ru_(ova)"
+        },
+        {
+            "id": 8777,
+            "name": "eiyuu_densetsu"
+        },
+        {
+            "id": 12572,
+            "name": "azur_lane"
+        },
+        {
+            "id": 11792,
+            "name": "mahou_shoujo_lyrical_nanoha_detonation"
+        },
+        {
+            "id": 8534,
+            "name": "tada-kun_wa_koi_wo_shinai"
+        },
+        {
+            "id": 615,
+            "name": "magnetic_rose"
+        },
+        {
+            "id": 24863,
+            "name": "ninja_kamui"
+        },
+        {
+            "id": 4930,
+            "name": "idol_project"
+        },
+        {
+            "id": 16562,
+            "name": "ace_wo_nerae!_(1979)"
+        },
+        {
+            "id": 2491,
+            "name": "prince_of_tennis_futari_no_samurai"
+        },
+        {
+            "id": 4574,
+            "name": "one_piece_film:_strong_world"
+        },
+        {
+            "id": 23833,
+            "name": "doraemon:_nobita's_sky_utopia"
+        },
+        {
+            "id": 1610,
+            "name": "black_magic_m-66"
+        },
+        {
+            "id": 4268,
+            "name": "boku_dake_ga_inai_machi"
+        },
+        {
+            "id": 2322,
+            "name": "great_teacher_onizuka"
+        },
+        {
+            "id": 22203,
+            "name": "cardfight!!_vanguard_will+dress_season_2"
+        },
+        {
+            "id": 22863,
+            "name": "edens_zero_season_2"
+        },
+        {
+            "id": 4483,
+            "name": "the_empire_of_corpses"
+        },
+        {
+            "id": 2102,
+            "name": "isekai_no_seikishi_monogatari"
+        },
+        {
+            "id": 20167,
+            "name": "the_humpbacked_horse_(1947)"
+        },
+        {
+            "id": 4593,
+            "name": "terraformars_revenge"
+        },
+        {
+            "id": 11460,
+            "name": "the_legend_of_korra_book_three"
+        },
+        {
+            "id": 19041,
+            "name": "xian_wang_de_ri_chang_sheng_huo_season_2"
+        },
+        {
+            "id": 4133,
+            "name": "k-on!_the_movie"
+        },
+        {
+            "id": 19008,
+            "name": "shine_post"
+        },
+        {
+            "id": 7010,
+            "name": "black_jack"
+        },
+        {
+            "id": 1832,
+            "name": "porco_rosso"
+        },
+        {
+            "id": 5701,
+            "name": "cinderella"
+        },
+        {
+            "id": 23455,
+            "name": "fate/strange_fake:_whispers_of_dawn"
+        },
+        {
+            "id": 1726,
+            "name": "selector_infected_wixoss"
+        },
+        {
+            "id": 16936,
+            "name": "perrine_monogatari"
+        },
+        {
+            "id": 15833,
+            "name": "bem:_become_human"
+        },
+        {
+            "id": 1507,
+            "name": "spriggan"
+        },
+        {
+            "id": 4211,
+            "name": "the_dagger_of_kamui"
+        },
+        {
+            "id": 9842,
+            "name": "sky_girls"
+        },
+        {
+            "id": 20117,
+            "name": "belle"
+        },
+        {
+            "id": 4854,
+            "name": "shiawase_sou_no_okojo-san"
+        },
+        {
+            "id": 11843,
+            "name": "kizumonogatari_part_2:_nekketsu"
+        },
+        {
+            "id": 2474,
+            "name": "tenchi_muyo_ryo_ohki"
+        },
+        {
+            "id": 7385,
+            "name": "uchuu_senkan_yamato_3"
+        },
+        {
+            "id": 15283,
+            "name": "bambi_ii"
+        },
+        {
+            "id": 231,
+            "name": "golden_boy"
+        },
+        {
+            "id": 5822,
+            "name": "this_ugly_yet_beautiful_world"
+        },
+        {
+            "id": 1408,
+            "name": "yu-gi-oh!_zexal_ii"
+        },
+        {
+            "id": 2571,
+            "name": "eldoran_series"
+        },
+        {
+            "id": 1909,
+            "name": "fate/stay_night_unlimited_blade_works"
+        },
+        {
+            "id": 24670,
+            "name": "kite_series"
+        },
+        {
+            "id": 8622,
+            "name": "mahou_shoujo_lyrical_nanoha_reflection"
+        },
+        {
+            "id": 4137,
+            "name": "world_destruction"
+        },
+        {
+            "id": 3357,
+            "name": "princess_lover!"
+        },
+        {
+            "id": 5857,
+            "name": "geobreeders"
+        },
+        {
+            "id": 13661,
+            "name": "bleach_movie_4:_hell_verse"
+        },
+        {
+            "id": 17980,
+            "name": "vanitas_no_carte"
+        },
+        {
+            "id": 9104,
+            "name": "sirius_the_jaeger"
+        },
+        {
+            "id": 25407,
+            "name": "the_concierge"
+        },
+        {
+            "id": 1308,
+            "name": "macross_7"
+        },
+        {
+            "id": 22169,
+            "name": "high_card"
+        },
+        {
+            "id": 11234,
+            "name": "sarazanmai"
+        },
+        {
+            "id": 11713,
+            "name": "oliver_and_company"
+        },
+        {
+            "id": 3395,
+            "name": "trigun"
+        },
+        {
+            "id": 19346,
+            "name": "eiga_daisuki_pompo_san"
+        },
+        {
+            "id": 8402,
+            "name": "the_reluctant_dragon"
+        },
+        {
+            "id": 5906,
+            "name": "akiba's_trip"
+        },
+        {
+            "id": 4613,
+            "name": "hundred"
+        },
+        {
+            "id": 13464,
+            "name": "blue_seed"
+        },
+        {
+            "id": 17804,
+            "name": "yama_nezumi_rocky_chuck"
+        },
+        {
+            "id": 1564,
+            "name": "g_dangaioh"
+        },
+        {
+            "id": 24073,
+            "name": "goblin_slayer_series"
+        },
+        {
+            "id": 7013,
+            "name": "kyoukai_no_rinne"
+        },
+        {
+            "id": 222,
+            "name": "heartcatch_precure!_hana_no_to_de_fashion_show...desu_ka!?"
+        },
+        {
+            "id": 2519,
+            "name": "jinki:_extend"
+        },
+        {
+            "id": 4873,
+            "name": "wan_wan_chushingura"
+        },
+        {
+            "id": 5963,
+            "name": "gabriel_dropout"
+        },
+        {
+            "id": 3779,
+            "name": "mobile_suit_gundam:_char's_counterattack"
+        },
+        {
+            "id": 11383,
+            "name": "grisaia:_phantom_trigger"
+        },
+        {
+            "id": 2581,
+            "name": "futari_wa_pretty_cure_max_heart"
+        },
+        {
+            "id": 18262,
+            "name": "blades_of_the_guardians"
+        },
+        {
+            "id": 365,
+            "name": "voogie's_angel"
+        },
+        {
+            "id": 6224,
+            "name": "lu_over_the_wall"
+        },
+        {
+            "id": 2330,
+            "name": "sasuga_no_sarutobi"
+        },
+        {
+            "id": 1830,
+            "name": "karas"
+        },
+        {
+            "id": 4796,
+            "name": "ganso_bakuretsu_hunter"
+        },
+        {
+            "id": 13749,
+            "name": "naruto_movie_3:_guardians_of_the_crescent_moon"
+        },
+        {
+            "id": 13599,
+            "name": "castlevania_season_3"
+        },
+        {
+            "id": 23194,
+            "name": "the_idolmaster_million_live"
+        },
+        {
+            "id": 251,
+            "name": "towa_no_quon"
+        },
+        {
+            "id": 23018,
+            "name": "blue_giant"
+        },
+        {
+            "id": 12351,
+            "name": "girl's_frontline"
+        },
+        {
+            "id": 4636,
+            "name": "jojo's_bizarre_adventure:_diamond_is_unbreakable"
+        },
+        {
+            "id": 2008,
+            "name": "ryuusei_no_rockman_tribe"
+        },
+        {
+            "id": 203,
+            "name": "robotics;notes"
+        },
+        {
+            "id": 17785,
+            "name": "my_hero_academia_movie_1:_two_heroes"
+        },
+        {
+            "id": 9535,
+            "name": "you're_under_arrest_(tv)"
+        },
+        {
+            "id": 22913,
+            "name": "the_idolm@ster_cinderella_girls_u149"
+        },
+        {
+            "id": 19281,
+            "name": "kuma_no_ko_jacky"
+        },
+        {
+            "id": 11910,
+            "name": "utawarerumono:_futari_no_hakuoro"
+        },
+        {
+            "id": 10248,
+            "name": "liz_and_the_blue_bird"
+        },
+        {
+            "id": 3360,
+            "name": "dungeon_ni_deai_o_motomeru_no_wa_machigatte_iru_darouka"
+        },
+        {
+            "id": 3314,
+            "name": "mahou_shoujo_lyrical_nanoha_vivid"
+        },
+        {
+            "id": 18874,
+            "name": "critical_role"
+        },
+        {
+            "id": 6449,
+            "name": "danmachi_gaiden:_sword_oratoria"
+        },
+        {
+            "id": 16660,
+            "name": "duckman"
+        },
+        {
+            "id": 18149,
+            "name": "heion_sedai_no_idaten_tachi"
+        },
+        {
+            "id": 1547,
+            "name": "black_bullet"
+        },
+        {
+            "id": 11099,
+            "name": "modest_heroes"
+        },
+        {
+            "id": 875,
+            "name": "who_framed_roger_rabbit"
+        },
+        {
+            "id": 5010,
+            "name": "love_live!_sunshine!!"
+        },
+        {
+            "id": 4216,
+            "name": "umi_monogatari"
+        },
+        {
+            "id": 17789,
+            "name": "dirty_pair_(tv)"
+        },
+        {
+            "id": 195,
+            "name": "love_live!"
+        },
+        {
+            "id": 19450,
+            "name": "hurricane_polymar"
+        },
+        {
+            "id": 18329,
+            "name": "doraemon_the_new_record_of_nobita_spaceblazer"
+        },
+        {
+            "id": 106,
+            "name": "valvrave_the_liberator"
+        },
+        {
+            "id": 17099,
+            "name": "dragon_quest:dai_no_daibouken_(1991)"
+        },
+        {
+            "id": 945,
+            "name": "nura:_rise_of_the_yokai_clan"
+        },
+        {
+            "id": 8720,
+            "name": "jack_to_mame_no_ki"
+        },
+        {
+            "id": 17659,
+            "name": "wolf_boy_ken"
+        },
+        {
+            "id": 651,
+            "name": "dragon_crisis!"
+        },
+        {
+            "id": 1897,
+            "name": "the_new_batman_adventures"
+        },
+        {
+            "id": 109,
+            "name": "seiken_no_blacksmith"
+        },
+        {
+            "id": 3823,
+            "name": "clockwork_fighters_hiwou's_war"
+        },
+        {
+            "id": 983,
+            "name": "prism_ark"
+        },
+        {
+            "id": 9852,
+            "name": "doraemon_(1979)"
+        },
+        {
+            "id": 4353,
+            "name": "shuffle!"
+        },
+        {
+            "id": 24707,
+            "name": "galaxy_angel_series"
+        },
+        {
+            "id": 7922,
+            "name": "tsukuyomi_moon_phase"
+        },
+        {
+            "id": 19204,
+            "name": "valorant"
+        },
+        {
+            "id": 14080,
+            "name": "trash_studio_commercial"
+        },
+        {
+            "id": 2485,
+            "name": "ninja_scroll"
+        },
+        {
+            "id": 16216,
+            "name": "saraba_uchuu_senkan_yamato:_ai_no_senchi_tachi"
+        },
+        {
+            "id": 9898,
+            "name": "saenai_heroine_no_sodatekata_♭"
+        },
+        {
+            "id": 25261,
+            "name": "blue_archive_the_animation"
+        },
+        {
+            "id": 4484,
+            "name": "battle_athletes_victory"
+        },
+        {
+            "id": 3594,
+            "name": "monster_musume_no_iru_nichijou"
+        },
+        {
+            "id": 14373,
+            "name": "tales_of_phantasia:_the_animation"
+        },
+        {
+            "id": 417,
+            "name": "ano_hi_mita_hana_no_namae_o_boku-tachi_wa_mada_shiranai"
+        },
+        {
+            "id": 17829,
+            "name": "legend_of_the_millennium_dragon"
+        },
+        {
+            "id": 23871,
+            "name": "pokemon:_paldean_winds"
+        },
+        {
+            "id": 13458,
+            "name": "magia_record:_mahou_shoujo_madoka_magica_gaiden"
+        },
+        {
+            "id": 8762,
+            "name": "tokyo_ghoul_√a"
+        },
+        {
+            "id": 13737,
+            "name": "bleach_movie_3:_fade_to_black"
+        },
+        {
+            "id": 11903,
+            "name": "gundam_breaker"
+        },
+        {
+            "id": 10540,
+            "name": "sekai_seifuku:_bouryaku_no_zvezda"
+        },
+        {
+            "id": 1614,
+            "name": "kill_me_baby"
+        },
+        {
+            "id": 3844,
+            "name": "hades_project_zeorymer"
+        },
+        {
+            "id": 2350,
+            "name": "zetman"
+        },
+        {
+            "id": 632,
+            "name": "munto"
+        },
+        {
+            "id": 2510,
+            "name": "slam_dunk"
+        },
+        {
+            "id": 4006,
+            "name": "baoh"
+        },
+        {
+            "id": 6899,
+            "name": "detatoko_princess"
+        },
+        {
+            "id": 16270,
+            "name": "k_(2012)"
+        },
+        {
+            "id": 805,
+            "name": "code_breaker"
+        },
+        {
+            "id": 3412,
+            "name": "digimon_adventure_tri."
+        },
+        {
+            "id": 3596,
+            "name": "gate"
+        },
+        {
+            "id": 759,
+            "name": "gen'ei_o_kakeru_taiyo"
+        },
+        {
+            "id": 4650,
+            "name": "ashita_no_joe_2"
+        },
+        {
+            "id": 4269,
+            "name": "starship_girl_yamamoto_yohko"
+        },
+        {
+            "id": 8511,
+            "name": "captain_tsubasa_(2018)"
+        },
+        {
+            "id": 21939,
+            "name": "dragon_age:_absolution"
+        },
+        {
+            "id": 1532,
+            "name": "disk_wars_avengers"
+        },
+        {
+            "id": 10022,
+            "name": "arjuna"
+        },
+        {
+            "id": 1558,
+            "name": "kimi_ni_todoke"
+        },
+        {
+            "id": 2942,
+            "name": "tanken_driland"
+        },
+        {
+            "id": 3808,
+            "name": "god_eater_(2015)"
+        },
+        {
+            "id": 465,
+            "name": "maria†holic"
+        },
+        {
+            "id": 3904,
+            "name": "k_return_of_kings"
+        },
+        {
+            "id": 16175,
+            "name": "kage_shadow"
+        },
+        {
+            "id": 1807,
+            "name": "bayonetta_bloody_fate"
+        },
+        {
+            "id": 9401,
+            "name": "bungou_stray_dogs_dead_apple"
+        },
+        {
+            "id": 9731,
+            "name": "zombieland_saga"
+        },
+        {
+            "id": 14212,
+            "name": "honkai_impact_3rd"
+        },
+        {
+            "id": 5748,
+            "name": "kyojin_no_hoshi"
+        },
+        {
+            "id": 19151,
+            "name": "rainbow_sentai_robin"
+        },
+        {
+            "id": 942,
+            "name": "futari_wa_precure_splash_star"
+        },
+        {
+            "id": 3308,
+            "name": "tenamonya_voyagers"
+        },
+        {
+            "id": 12220,
+            "name": "mars_daybreak"
+        },
+        {
+            "id": 893,
+            "name": "galilei_donna"
+        },
+        {
+            "id": 8670,
+            "name": "fireworks_should_we_see_it_from_the_side_or_the_bottom?"
+        },
+        {
+            "id": 559,
+            "name": "ojamajo_doremi_dokkaan!"
+        },
+        {
+            "id": 1124,
+            "name": "mighty_space_miners"
+        },
+        {
+            "id": 17652,
+            "name": "kurenai_sanshiro"
+        },
+        {
+            "id": 13764,
+            "name": "windy_tales"
+        },
+        {
+            "id": 15543,
+            "name": "kimi_to_boku_no_saigo_no_senjou_aruiwa_sekai_ga_hajimaru_seisen"
+        },
+        {
+            "id": 18218,
+            "name": "magia_record:_mahou_shoujo_madoka_magica_gaiden_second_season"
+        },
+        {
+            "id": 621,
+            "name": "chihayafuru"
+        },
+        {
+            "id": 710,
+            "name": "my_neighbors_the_yamadas"
+        },
+        {
+            "id": 3996,
+            "name": "devilman_(1987)"
+        },
+        {
+            "id": 22185,
+            "name": "itai_no_wa_iya_nano_de_bougyoryoku_ni_kyokufuri_shitai_to_omoimasu_season_2"
+        },
+        {
+            "id": 1474,
+            "name": "saber_marionette_j"
+        },
+        {
+            "id": 3693,
+            "name": "grave_of_the_fireflies"
+        },
+        {
+            "id": 19285,
+            "name": "scissor_seven_s3"
+        },
+        {
+            "id": 9235,
+            "name": "kono_subarashii_sekai_ni_shukufuku_wo!_2"
+        },
+        {
+            "id": 16306,
+            "name": "phi_brain_series"
+        },
+        {
+            "id": 5404,
+            "name": "majime_ni_fumajime_kaiketsu_zorori_nazo_no_otakara_daisakusen"
+        },
+        {
+            "id": 368,
+            "name": "minami-ke"
+        },
+        {
+            "id": 5934,
+            "name": "owarimonogatari"
+        },
+        {
+            "id": 6771,
+            "name": "giant_gorg"
+        },
+        {
+            "id": 6279,
+            "name": "haiyore_nyaruko-san"
+        },
+        {
+            "id": 3075,
+            "name": "kuroshitsuji_series"
+        },
+        {
+            "id": 24765,
+            "name": "blue_archive_cm"
+        },
+        {
+            "id": 12603,
+            "name": "seis_manos"
+        },
+        {
+            "id": 16427,
+            "name": "2.43:_seiin_koukou_danshi_volley-bu"
+        },
+        {
+            "id": 22915,
+            "name": "the_ancient_magus'_bride_season_2"
+        },
+        {
+            "id": 15040,
+            "name": "gochiusa_series"
+        },
+        {
+            "id": 20368,
+            "name": "koukou_tekken-den_tough"
+        },
+        {
+            "id": 5970,
+            "name": "treasure_planet"
+        },
+        {
+            "id": 1280,
+            "name": "campione"
+        },
+        {
+            "id": 3296,
+            "name": "sousei_no_aquarion"
+        },
+        {
+            "id": 14369,
+            "name": "the_road_to_el_dorado"
+        },
+        {
+            "id": 8272,
+            "name": "sol_bianca"
+        },
+        {
+            "id": 14466,
+            "name": "poketoon"
+        },
+        {
+            "id": 5533,
+            "name": "free!_eternal_summer"
+        },
+        {
+            "id": 4939,
+            "name": "voltron_legendary_defender"
+        },
+        {
+            "id": 22919,
+            "name": "isekai_one_turn_kill_nee-san:_ane_douhan_no_isekai_seikatsu_hajimemashita"
+        },
+        {
+            "id": 15869,
+            "name": "yotoden"
+        },
+        {
+            "id": 1204,
+            "name": "eiyuu_densetsu_sora_no_kiseki_the_animation"
+        },
+        {
+            "id": 1583,
+            "name": "seitokai_yakuindomo"
+        },
+        {
+            "id": 8529,
+            "name": "megalo_box"
+        },
+        {
+            "id": 3858,
+            "name": "jormungand"
+        },
+        {
+            "id": 15774,
+            "name": "noblesse_series"
+        },
+        {
+            "id": 3367,
+            "name": "higurashi_no_naku_koro_ni_kira"
+        },
+        {
+            "id": 14266,
+            "name": "princess_tutu"
+        },
+        {
+            "id": 8574,
+            "name": "shin_getter_robo_tai_neo_getter_robo"
+        },
+        {
+            "id": 10747,
+            "name": "mirai_no_mirai"
+        },
+        {
+            "id": 174,
+            "name": "brave_exkaiser"
+        },
+        {
+            "id": 3388,
+            "name": "ga-rei:_zero"
+        },
+        {
+            "id": 13530,
+            "name": "hibike!_euphonium:_chikai_no_finale"
+        },
+        {
+            "id": 12730,
+            "name": "psycho_pass_3"
+        },
+        {
+            "id": 20483,
+            "name": "maze_series"
+        },
+        {
+            "id": 9457,
+            "name": "slayers_try"
+        },
+        {
+            "id": 3987,
+            "name": "irresponsible_captain_tylor"
+        },
+        {
+            "id": 14633,
+            "name": "future_gpx_cyber_formula_double_one"
+        },
+        {
+            "id": 2610,
+            "name": "ghost_in_the_shell_stand_alone_complex"
+        },
+        {
+            "id": 24778,
+            "name": "ninja_scroll_series"
+        },
+        {
+            "id": 386,
+            "name": "dead_leaves"
+        },
+        {
+            "id": 12477,
+            "name": "psycho_pass_sinners_of_the_system"
+        },
+        {
+            "id": 118,
+            "name": "tarzan"
+        },
+        {
+            "id": 2240,
+            "name": "niju-menso_no_musume"
+        },
+        {
+            "id": 5391,
+            "name": "soushin_shoujo_matoi"
+        },
+        {
+            "id": 948,
+            "name": "dantes_inferno"
+        },
+        {
+            "id": 1798,
+            "name": "genma_taisen"
+        },
+        {
+            "id": 19610,
+            "name": "my_song"
+        },
+        {
+            "id": 8553,
+            "name": "puzzle_&_dragons"
+        },
+        {
+            "id": 4256,
+            "name": "nhk_ni_youkoso!"
+        },
+        {
+            "id": 1533,
+            "name": "yuri_seijin_naoko-san"
+        },
+        {
+            "id": 4064,
+            "name": "virtua_fighter"
+        },
+        {
+            "id": 15567,
+            "name": "hanyou_no_yashahime"
+        },
+        {
+            "id": 8985,
+            "name": "mahou_tsukai_tai!"
+        },
+        {
+            "id": 5569,
+            "name": "shakunetsu_no_takkyu_musume"
+        },
+        {
+            "id": 3643,
+            "name": "legend_of_the_galactic_heroes"
+        },
+        {
+            "id": 17440,
+            "name": "yasuke"
+        },
+        {
+            "id": 872,
+            "name": "log_horizon"
+        },
+        {
+            "id": 2316,
+            "name": "ashita_no_nadja"
+        },
+        {
+            "id": 3722,
+            "name": "monogatari_second_season"
+        },
+        {
+            "id": 14094,
+            "name": "king's_raid"
+        },
+        {
+            "id": 8515,
+            "name": "tensai_bakabon_series"
+        },
+        {
+            "id": 10728,
+            "name": "brigadoon"
+        },
+        {
+            "id": 8694,
+            "name": "darkwing_duck"
+        },
+        {
+            "id": 20217,
+            "name": "love_live!_nijigasaki_high_school_idol_club_2nd_season"
+        },
+        {
+            "id": 5066,
+            "name": "legend_of_crystania:_the_motion_picture"
+        },
+        {
+            "id": 864,
+            "name": "ichiban_ushiro_no_daimao"
+        },
+        {
+            "id": 8835,
+            "name": "brave_story"
+        },
+        {
+            "id": 2903,
+            "name": "koufuku_graffiti"
+        },
+        {
+            "id": 5264,
+            "name": "steins;gate"
+        },
+        {
+            "id": 8576,
+            "name": "deltora_quest"
+        },
+        {
+            "id": 24709,
+            "name": "alice_to_therese_no_maboroshi_koujou"
+        },
+        {
+            "id": 19708,
+            "name": "tiger_&_bunny_series"
+        },
+        {
+            "id": 24407,
+            "name": "psycho_pass_providence"
+        },
+        {
+            "id": 11057,
+            "name": "love_death_and_robots"
+        },
+        {
+            "id": 14636,
+            "name": "future_gpx_cyber_formula_zero"
+        },
+        {
+            "id": 7073,
+            "name": "detective_conan_movie_20:_the_darkest_nightmare"
+        },
+        {
+            "id": 2009,
+            "name": "barakamon"
+        },
+        {
+            "id": 6527,
+            "name": "dirty_pair_flash"
+        },
+        {
+            "id": 18872,
+            "name": "world_trigger_third_season"
+        },
+        {
+            "id": 10083,
+            "name": "bokusatsu_tenshi_dokuro-chan"
+        },
+        {
+            "id": 775,
+            "name": "getter_robo"
+        },
+        {
+            "id": 3440,
+            "name": "battle_arena_toshinden"
+        },
+        {
+            "id": 7814,
+            "name": "pokemon_the_movie:_i_choose_you!"
+        },
+        {
+            "id": 8306,
+            "name": "gekifu_bakegyamon_ayakashi"
+        },
+        {
+            "id": 18402,
+            "name": "chibineko_tom_no_daibouken"
+        },
+        {
+            "id": 25243,
+            "name": "mahouka_koukou_no_yuutousei_season_3"
+        },
+        {
+            "id": 5108,
+            "name": "super_atragon"
+        },
+        {
+            "id": 7345,
+            "name": "wakusei_robo_danguard_a"
+        },
+        {
+            "id": 1917,
+            "name": "new_dominion_tank_police"
+        },
+        {
+            "id": 23722,
+            "name": "gundam_build_metaverse"
+        },
+        {
+            "id": 4076,
+            "name": "genmu_senki_leda"
+        },
+        {
+            "id": 3179,
+            "name": "the_lion_king"
+        },
+        {
+            "id": 3268,
+            "name": "yahari_ore_no_seishun_love_comedy_wa_machigatteiru_zoku"
+        },
+        {
+            "id": 12901,
+            "name": "sakura_taisen:_ouka_kenran"
+        },
+        {
+            "id": 18191,
+            "name": "masters_of_the_universe_revelation"
+        },
+        {
+            "id": 20261,
+            "name": "tate_no_yuusha_no_nariagari_season_2"
+        },
+        {
+            "id": 7481,
+            "name": "mobile_suit_gundam_seed_destiny"
+        },
+        {
+            "id": 25598,
+            "name": "mobile_suit_gundam_seed_freedom"
+        },
+        {
+            "id": 10244,
+            "name": "love_live!_movie"
+        },
+        {
+            "id": 16476,
+            "name": "hataraku_saibou_series"
+        },
+        {
+            "id": 8963,
+            "name": "kuroko_no_basket:_last_game"
+        },
+        {
+            "id": 22166,
+            "name": "kyokou_suiri_series"
+        },
+        {
+            "id": 12561,
+            "name": "honzuki_no_gekokujou"
+        },
+        {
+            "id": 16709,
+            "name": "dirty_pair_ova"
+        }
+    ]
+}
