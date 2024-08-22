@@ -9,36 +9,46 @@ import animeNames from "./anime-name-list.json";
 import ReactPlayer from 'react-player'
 
 interface Weeble {
-  name: any;
+  title: string;
+  name: string;
   vid_list: any[] | undefined;
 }
 
 
 function App() {
   const [guess, setGuess] = useState<string>("")
-  const [guesses, setGuesses] = useState<number>(0)
+  const [prevGuesses, setPrevGuesses] = useState<string[]>()
+  const [guessNum, setGuessNum] = useState<number>(0)
 
-  const [dailyWeeble, setDailyWeeble] = useState<any>()
   const [video, setVideo] = useState<string>("")
   const [vidNum, setVidNum] = useState<number>(0)
+  const [backDisable, setBackDisable] = useState(true)
+  const [frontDisable, setFrontDisable] = useState(false)
 
   const [weeble, setWeeble] = useState<Weeble | undefined>(undefined)
-
-
-  const [page, setPage] = useState<number>(1)
-  const [anime, setAnime] = useState<any[] | undefined>()
-
-  // const [output, setOutput] = useState<string>("")
-
   const [animeOptions, setAnimeOptions] = useState<any>()
 
   function handleResponse(response: any) {
+    console.log(response)
     return response.json().then(function (json: any) {
       //return response.ok ? json : Promise.reject(json);
       //console.log(json)
       if (response.ok) {
-        console.log("JSON Data: ", json)
-        setWeeble({"name": weeble?.name, "vid_list": json})
+        console.log("JSON Data: ", json.Weeble)
+        let data = json.Weeble
+        if (localStorage.getItem("Weeble")) {
+          let local_weeble = localStorage.getItem("Weeble")
+          console.log("RES LOCAL WEEBLE: ", local_weeble)
+          //let parse_weeble = JSON.parse(local_weeble)
+
+          if (data.name === local_weeble)
+
+            localStorage.setItem("Weeble", JSON.stringify(data))
+
+        } else {
+          setWeeble(data)
+          localStorage.setItem("Weeble", JSON.stringify(data))
+        }
       } else {
         console.log(response)
       }
@@ -50,77 +60,84 @@ function App() {
     console.error(error);
   }
 
-  // const setupOutput = () => {
-  //   setOutput("{")
-  // }
-
-  //var fix_name
 
   useEffect(() => {
-    if (weeble != undefined) {
-      var url = `/post.json?tags=${weeble.name.name}`;
-      console.log("TAG: ", weeble.name.name)
 
-      var options = {
-        method: 'GET',
-        mode: "cors" as RequestMode,
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      };
-  
-  
-      const fetch_data = () => {
-        try {
-          fetch(url, options)
-            .then(handleResponse)
-            .catch(handleError);
-        }
-        catch (err) {
-          alert(err);
-        }
+    var url = `http://localhost:3005/`;
+    //console.log("TAG: ", weeble.name.name)
+
+    var options = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       }
-  
-      fetch_data()
+    };
+
+
+    const fetch_data = () => {
+      try {
+        fetch(url, options)
+          .then(handleResponse)
+          .catch(handleError);
+      }
+      catch (err) {
+        alert(err);
+      }
     }
-  }, [weeble?.name])
 
-  // TO FETCH POST
-  const generateWeeble = () => {
-    let anime_list = animeData.Anime
-    console.log("ANIME LIST: " + JSON.stringify(anime_list.length))
-    //console.log(anime_list)
+    let check_local = localStorage.getItem("Weeble")
+    
+    if (check_local) {
+      checkWeeble()
+      let parseData = JSON.parse(check_local)
 
-    // anime_list.forEach((anim) => {
-    //   console.log(anim)
-    // })
+      console.log("LOCAL: ", JSON.parse(check_local))
+      localStorage.setItem("vidNum", "0")
+      setWeeble(parseData)
 
-    let get_daily_weeb = anime_list[(Math.floor(Math.random() * anime_list.length))]
-    //console.log("Daily Weeb: " + JSON.stringify(daily_weeb))
+    } else {
+      fetch_data()
 
-    setWeeble({"name": get_daily_weeb, "vid_list": undefined})
+      localStorage.setItem("vidNum", "0")
+      localStorage.setItem("guessNum", "0")
+      let arr: string[] = []
 
-  }
+      localStorage.setItem("guessList", JSON.stringify(arr))
+
+      setVidNum(0)
+      setGuessNum(0)
+      setPrevGuesses([])
+      //setGuesses
+    }
+
+    // if (!check_local) {
+
+    // } else {
+    //   setWeeble(check_local)
+    // }
+
+
+  }, [])
+
 
   const updateVideo = () => {
-    if (weeble?.vid_list != undefined)
-      setVideo(weeble.vid_list[vidNum].file_url)
+    if (weeble?.vid_list != undefined) {
+      console.log("VIDEO URL: ", weeble.vid_list[vidNum].file_url)
+      let vid: any = weeble.vid_list[vidNum].file_url
+      console.log("Video: ", vid)
+
+      setVideo(vid)
     }
+  }
 
   useEffect(() => {
     if (weeble?.vid_list != undefined) {
       updateVideo()
     }
-    
-  }, [weeble?.vid_list, vidNum])
 
-  // STARTING USE EFFECT TO GENERATE THE DAILY WEEBLE
-  useEffect(() => {
-
-    generateWeeble()
-  }, [])
-
+  }, [weeble?.vid_list, guessNum, vidNum])
 
   // RETURNS ANIME OPTIONS/ SETS IT UP
   useEffect(() => {
@@ -128,39 +145,33 @@ function App() {
 
       if (animeData.Anime) {
         let data = animeData.Anime
-        //console.log(data)
-  
-  
+
         return (
-        <div>
-          {data.map((ani: any) => {
-            //console.log(ani)
-            let tempStr = ani.name
-            tempStr = tempStr.replaceAll("_", " ")
-            for (let i = 0; i < tempStr.length; i++) {
-              if (i === 0 || tempStr[i - 1] === " ") {
-                let char = tempStr.charAt(i).toUpperCase()
-                tempStr = tempStr.substring(0, i) + char + tempStr.substring(i + 1)
+          <div>
+            {data.map((ani: any) => {
+              //console.log(ani)
+              let tempStr = ani.name
+              tempStr = tempStr.replaceAll("_", " ")
+              for (let i = 0; i < tempStr.length; i++) {
+                if (i === 0 || tempStr[i - 1] === " ") {
+                  let char = tempStr.charAt(i).toUpperCase()
+                  tempStr = tempStr.substring(0, i) + char + tempStr.substring(i + 1)
+                }
               }
-              
-            }
-            //console.log("Temp String: " + tempStr) 
-            return (
-              <option key={ani.id} value={tempStr}></option>
-            )
-          })}
-        </div>
+              return (
+                <option key={ani.id} value={tempStr}></option>
+              )
+            })}
+          </div>
         )
-  
+
       } else {
         return (<p>None</p>)
       }
-    
+
     }
     setAnimeOptions(extractNames)
   }, [])
-  
-
 
   const showWeeble = () => {
     console.log(weeble)
@@ -168,67 +179,97 @@ function App() {
 
   const guessAnime = () => {
     if (weeble) {
-      let checkString = weeble.name.name
+      console.log(weeble.title, guess)
 
-      let res = guess.replaceAll(" ", "_")
-      console.log("RES: ", res.toUpperCase())
-      console.log("CHECK: ", checkString)
+      let vid_num = Number(localStorage.getItem("vidNum"))
+      let guess_num = Number(localStorage.getItem("guessNum"))
+      let guess_list: any = localStorage.getItem("guessList")
 
-      res = res.toUpperCase()
+      console.log("LOCAL VID NUM: ", vid_num)
+      console.log("GUESS_LIST: ", guess_list)
 
-      checkString = checkString.toUpperCase()
-
-      if (res === checkString) {
+      if (weeble.title === guess) {
         alert("WIN!")
         // unlock all the vids/guesses
       }
-      
-      if (guesses === 6) {
-        alert("u lose")
+
+      if (guessNum >= 5) {
+        alert("u lose, the show was " + weeble.name)
       } else {
-        itrVidNum(1)
-        setGuesses(guesses + 1)
+
+        localStorage.setItem("vidNum", `${vid_num + 1}`)
+        localStorage.setItem("guessNum", `${guess_num + 1}`)
+        if (guess_list) {
+          let lst = JSON.parse(guess_list)
+          console.log("PARSED_GUESS_LIST: ", lst.guess_list)
+          lst.push(guess)
+
+          console.log("ARR: ", lst);
+          localStorage.setItem("guessList", JSON.stringify(lst))
+        }
+        itrVidNum(Number(localStorage.getItem("guessNum")))
+        setGuessNum(Number(localStorage.getItem("guessNum")))
       }
     }
   }
   const itrVidNum = (num: number) => {
 
-    if (vidNum === 0 && num === -1 || vidNum === 6 && num === 1) {
+    
+    console.log("Vid # ", vidNum)
+    console.log("Guess # ", guessNum)
+    if (vidNum === 0 && num === -1 || vidNum === 5 && num === 1) {
       return;
     }
 
-    setVidNum(vidNum + num)
-    
+    localStorage.setItem("vidNum", `${vidNum + num}`)
+    let vid_num = Number(localStorage.getItem("vidNum"))
+
+    setVidNum(vid_num)
+    console.log(vidNum)
+
+    if (vid_num == 0) {
+      setBackDisable(true);
+    } else {
+      setBackDisable(false);
+    }
+
+    if (vidNum == 5 || vidNum < guessNum + 1) {
+      setFrontDisable(true);
+    } else {
+      setFrontDisable(false);
+    }
   }
 
-  // const showStates = (): any => {
-  //   if (anime && dailyWeeble) {
-  //     return <p>Anime: {anime} - Weeble: {dailyWeeble}</p>
-  //   }
-  //   return <p></p>
-  // }
+  const checkWeeble = () => {
+    var url = `http://localhost:3005/`;
+    //console.log("TAG: ", weeble.name.name)
+    //console.log(check_weeble)
 
-  // Sets up 
-  // useEffect(() => {
-  //   const loadAnimeOptions = () => {
-  //     // load text file 
-  //     //console.log(animeNames)
-  //     let names: any = animeNames;
+    var options = {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    };
 
-  //     return (
-  //       <div>
-  //         {names.anime_names.map((name: any) => {
-  //           //console.log(name)
-  //           return <option key={name} value={name}></option>
+    try {
+      fetch(url, options)
+        .then((res) => {
+          return res.json().then((data) => {
+            console.log(`${data.title} = ${weeble?.title}`)
 
-  //         })}
-  //       </div>
-  //     )
-  //   }
 
-  //   //setAnimeOptions(loadAnimeOptions)
-  // }, [animeNames])
+          })
+        })
+        .catch(handleError);
+    }
+    catch (err) {
+      alert(err);
+    }
 
+  }
 
 
   return (
@@ -239,10 +280,10 @@ function App() {
       </header>
 
       <div >
-        <button onClick={() => itrVidNum(-1)}>
+        <button onClick={() => itrVidNum(-1)} disabled={backDisable}>
           {"<"}
-        </button>      
-        <button onClick={() => itrVidNum(1)}>
+        </button>
+        <button onClick={() => itrVidNum(1)} disabled={frontDisable}>
           {">"}
         </button>
       </div>

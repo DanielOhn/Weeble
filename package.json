@@ -47,5 +47,5 @@
     "@types/file-saver": "^2.0.7",
     "file-saver": "^2.0.5"
   },
-  "proxy": "https://www.sakugabooru.com"
+  "proxy": "http://localhost:3005"
 }
