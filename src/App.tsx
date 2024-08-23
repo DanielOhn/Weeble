@@ -19,14 +19,17 @@ function App() {
   const [guess, setGuess] = useState<string>("")
   const [prevGuesses, setPrevGuesses] = useState<string[]>()
   const [guessNum, setGuessNum] = useState<number>(0)
+  const [hideGuess, setHideGuess] = useState<boolean>(false)
+
+  const [imgFile, setImgFile] = useState<string>("")
 
   const [video, setVideo] = useState<string>("")
   const [vidNum, setVidNum] = useState<number>(0)
-  const [backDisable, setBackDisable] = useState(true)
-  const [frontDisable, setFrontDisable] = useState(false)
 
   const [weeble, setWeeble] = useState<Weeble | undefined>(undefined)
   const [animeOptions, setAnimeOptions] = useState<any>()
+
+  const [enableBtns, setEnableBtns] = useState<any>([true, true, true, true, true])
 
   function handleResponse(response: any) {
     console.log(response)
@@ -96,6 +99,7 @@ function App() {
       console.log("LOCAL: ", JSON.parse(check_local))
       localStorage.setItem("vidNum", "0")
       setWeeble(parseData)
+      updateVids(0)
 
     } else {
       fetch_data()
@@ -106,10 +110,10 @@ function App() {
 
       localStorage.setItem("guessList", JSON.stringify(arr))
 
-      setVidNum(0)
       setGuessNum(0)
       setPrevGuesses([])
-      //setGuesses
+      updateVids(0)
+
     }
 
     // if (!check_local) {
@@ -123,7 +127,8 @@ function App() {
 
 
   const updateVideo = () => {
-    if (weeble?.vid_list != undefined) {
+    console.log("VID: ", weeble?.vid_list)
+    if (weeble?.vid_list !== undefined) {
       console.log("VIDEO URL: ", weeble.vid_list[vidNum].file_url)
       let vid: any = weeble.vid_list[vidNum].file_url
       console.log("Video: ", vid)
@@ -132,9 +137,19 @@ function App() {
     }
   }
 
+
+  const updateVids = (num: number) => {
+
+    if (weeble?.vid_list) {
+      let vid: any = weeble?.vid_list[num].file_url
+      setVideo(vid)
+    }
+  }
+
   useEffect(() => {
-    if (weeble?.vid_list != undefined) {
-      updateVideo()
+    
+    if (weeble?.vid_list !== undefined) {
+      //updateVideo()
     }
 
   }, [weeble?.vid_list, guessNum, vidNum])
@@ -173,31 +188,29 @@ function App() {
     setAnimeOptions(extractNames)
   }, [])
 
-  const showWeeble = () => {
-    console.log(weeble)
-  }
-
   const guessAnime = () => {
     if (weeble) {
       console.log(weeble.title, guess)
 
-      let vid_num = Number(localStorage.getItem("vidNum"))
       let guess_num = Number(localStorage.getItem("guessNum"))
       let guess_list: any = localStorage.getItem("guessList")
 
-      console.log("LOCAL VID NUM: ", vid_num)
       console.log("GUESS_LIST: ", guess_list)
 
       if (weeble.title === guess) {
         alert("WIN!")
         // unlock all the vids/guesses
+        guess_num = 5
+        iterBtn(guess_num)
+        updateVids(guess_num)
+        return
       }
 
       if (guessNum >= 5) {
         alert("u lose, the show was " + weeble.name)
+        setHideGuess(true)
       } else {
 
-        localStorage.setItem("vidNum", `${vid_num + 1}`)
         localStorage.setItem("guessNum", `${guess_num + 1}`)
         if (guess_list) {
           let lst = JSON.parse(guess_list)
@@ -207,37 +220,27 @@ function App() {
           console.log("ARR: ", lst);
           localStorage.setItem("guessList", JSON.stringify(lst))
         }
-        itrVidNum(Number(localStorage.getItem("guessNum")))
-        setGuessNum(Number(localStorage.getItem("guessNum")))
+        //itrVidNum(Number(localStorage.getItem("guessNum")))
+        let guessing = Number(localStorage.getItem("guessNum"))
+        setGuessNum(guessing)
+        iterBtn(guessing)
+        updateVids(guessing)
       }
     }
   }
-  const itrVidNum = (num: number) => {
 
-    
-    console.log("Vid # ", vidNum)
-    console.log("Guess # ", guessNum)
-    if (vidNum === 0 && num === -1 || vidNum === 5 && num === 1) {
-      return;
-    }
+  const iterBtn = (num: number) => {
+    let btn_array = [
+      [true, true, true, true, true],
+      [false, true, true, true, true],
+      [false, false, true, true, true],
+      [false, false, false, true, true],
+      [false, false, false, false, true],
+      [false, false, false, false, false]
+    ]
 
-    localStorage.setItem("vidNum", `${vidNum + num}`)
-    let vid_num = Number(localStorage.getItem("vidNum"))
-
-    setVidNum(vid_num)
-    console.log(vidNum)
-
-    if (vid_num == 0) {
-      setBackDisable(true);
-    } else {
-      setBackDisable(false);
-    }
-
-    if (vidNum == 5 || vidNum < guessNum + 1) {
-      setFrontDisable(true);
-    } else {
-      setFrontDisable(false);
-    }
+    console.log("ARR: ", btn_array[0])
+    setEnableBtns(btn_array[num])
   }
 
   const checkWeeble = () => {
@@ -258,10 +261,31 @@ function App() {
       fetch(url, options)
         .then((res) => {
           return res.json().then((data) => {
-            console.log(`${data.title} = ${weeble?.title}`)
+            let weeb: any = localStorage.getItem("Weeble")
+            console.log(weeb)
+            if (weeb)
+              weeb = JSON.parse(weeb)
+              weeb = weeb.title
+
+            console.log(`${data["Weeble"].title} = ${weeb}`)
+
+            if (data["Weeble"].title !== weeb) {
+              setWeeble(data.Weeble)
+              localStorage.setItem("Weeble", JSON.stringify(data))
+
+              localStorage.setItem("vidNum", "0")
+              localStorage.setItem("guessNum", "0")
+              let arr: string[] = []
+        
+              localStorage.setItem("guessList", JSON.stringify(arr))
+        
+              setVidNum(0)
+              setGuessNum(0)
+              setPrevGuesses([])
+              updateVids(0)
 
 
-          })
+          }})
         })
         .catch(handleError);
     }
@@ -276,21 +300,31 @@ function App() {
     <div className="App">
       <h1 className='header'>Weeble</h1>
       <header className="App-header">
+        <img src={imgFile}></img>
         <ReactPlayer url={video} width="640px" height="360px" controls={true} />
       </header>
 
-      <div >
-        <button onClick={() => itrVidNum(-1)} disabled={backDisable}>
-          {"<"}
+      <div>
+        <button onClick={() => updateVids(0)}>
+          1
         </button>
-        <button onClick={() => itrVidNum(1)} disabled={frontDisable}>
-          {">"}
+        <button onClick={() => updateVids(1)} disabled={enableBtns[0]}>
+          2
         </button>
-      </div>
+        <button onClick={() => updateVids(2)} disabled={enableBtns[1]}>
+          3
+        </button>
+        <button onClick={() => updateVids(3)} disabled={enableBtns[2]}>
+          4
+        </button>
+        <button onClick={() => updateVids(4)} disabled={enableBtns[3]}>
+          5
+        </button>
+        <button onClick={() => updateVids(5)} disabled={enableBtns[4]}>
+          6
+        </button>
 
-      <button onClick={showWeeble}>
-        Show Weeble
-      </button>
+      </div>
 
       <input id="anime-guess" list="anime-list" className="anime-guess" value={guess} onChange={e => { setGuess(e.target.value) }} />
       <div className="anime-list">
@@ -299,7 +333,7 @@ function App() {
         </datalist>
       </div>
 
-      <button className="btn" name="guess-button" onClick={guessAnime}>Submit Guess</button>
+      <button className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button>
 
     </div>
   );
