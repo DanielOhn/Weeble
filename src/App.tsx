@@ -1,12 +1,13 @@
 //import lore from './lore.jpg';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, ReactNode } from 'react';
 import './App.css';
 import { saveAs } from 'file-saver';
 
 import animeData from "./sakugabooru-list.json";
-import animeNames from "./anime-name-list.json";
+//import animeNames from "./anime-name-list.json";
 
 import ReactPlayer from 'react-player'
+import GuessList from "./guess_list"
 
 interface Weeble {
   title: string;
@@ -17,9 +18,10 @@ interface Weeble {
 
 function App() {
   const [guess, setGuess] = useState<string>("")
-  const [prevGuesses, setPrevGuesses] = useState<string[]>()
+  //const [prevGuesses, setPrevGuesses] = useState<string[]>()
   const [guessNum, setGuessNum] = useState<number>(0)
   const [hideGuess, setHideGuess] = useState<boolean>(false)
+  const [revealGuess, setRevealGuess] = useState<string>("Reveal Weeble")
 
   const [imgFile, setImgFile] = useState<string>("")
 
@@ -39,19 +41,13 @@ function App() {
       if (response.ok) {
         console.log("JSON Data: ", json.Weeble)
         let data = json.Weeble
-        if (localStorage.getItem("Weeble")) {
-          let local_weeble = localStorage.getItem("Weeble")
-          console.log("RES LOCAL WEEBLE: ", local_weeble)
-          //let parse_weeble = JSON.parse(local_weeble)
 
-          if (data.name === local_weeble)
+        setWeeble(data)
+        localStorage.setItem("Weeble", JSON.stringify(data))
 
-            localStorage.setItem("Weeble", JSON.stringify(data))
-
-        } else {
-          setWeeble(data)
-          localStorage.setItem("Weeble", JSON.stringify(data))
-        }
+        setGuessNum(0)
+        //setPrevGuesses([])
+        updateVids(0)
       } else {
         console.log(response)
       }
@@ -91,28 +87,16 @@ function App() {
     }
 
     let check_local = localStorage.getItem("Weeble")
-    
-    if (check_local) {
-      checkWeeble()
-      let parseData = JSON.parse(check_local)
 
-      console.log("LOCAL: ", JSON.parse(check_local))
-      localStorage.setItem("vidNum", "0")
-      setWeeble(parseData)
-      updateVids(0)
+    if (check_local) {
+      checkWeeble(check_local)
 
     } else {
       fetch_data()
-
       localStorage.setItem("vidNum", "0")
       localStorage.setItem("guessNum", "0")
       let arr: string[] = []
-
       localStorage.setItem("guessList", JSON.stringify(arr))
-
-      setGuessNum(0)
-      setPrevGuesses([])
-      updateVids(0)
 
     }
 
@@ -125,31 +109,29 @@ function App() {
 
   }, [])
 
-
-  const updateVideo = () => {
-    console.log("VID: ", weeble?.vid_list)
-    if (weeble?.vid_list !== undefined) {
-      console.log("VIDEO URL: ", weeble.vid_list[vidNum].file_url)
-      let vid: any = weeble.vid_list[vidNum].file_url
-      console.log("Video: ", vid)
-
-      setVideo(vid)
-    }
-  }
-
-
   const updateVids = (num: number) => {
-
     if (weeble?.vid_list) {
-      let vid: any = weeble?.vid_list[num].file_url
-      setVideo(vid)
+      let url: any = weeble?.vid_list[num].file_url
+
+      let check = url.split(".")
+      console.log("VID: ", check[3])
+
+      if (check[3] === "mp4") {
+        setVideo(url)
+        setImgFile("")
+      } else {
+        setVideo("")
+        setImgFile(url)
+      }
+      
     }
+    //console.log("UPDATE VIDS WEEB: ", weeble)
   }
 
   useEffect(() => {
-    
+
     if (weeble?.vid_list !== undefined) {
-      //updateVideo()
+      updateVids(vidNum)
     }
 
   }, [weeble?.vid_list, guessNum, vidNum])
@@ -203,33 +185,41 @@ function App() {
         guess_num = 5
         iterBtn(guess_num)
         updateVids(guess_num)
-        return
-      }
+        setGuessNum(6)
+        localStorage.setItem("guessNum", `${6}`)
+      } else if (guessNum >= 5) {
 
-      if (guessNum >= 5) {
-        alert("u lose, the show was " + weeble.name)
         setHideGuess(true)
+        setGuessNum(guessNum + 1)
+        localStorage.setItem("guessNum", `${guess_num + 1}`)
+        alert("u lose, the show was " + weeble.title)
       } else {
 
         localStorage.setItem("guessNum", `${guess_num + 1}`)
-        if (guess_list) {
-          let lst = JSON.parse(guess_list)
-          console.log("PARSED_GUESS_LIST: ", lst.guess_list)
-          lst.push(guess)
+        localStorage.setItem("vidNum", `${guess_num + 1}`)
 
-          console.log("ARR: ", lst);
-          localStorage.setItem("guessList", JSON.stringify(lst))
-        }
         //itrVidNum(Number(localStorage.getItem("guessNum")))
-        let guessing = Number(localStorage.getItem("guessNum"))
+        let guessing = guess_num + 1
+        setVidNum(guessing)
         setGuessNum(guessing)
         iterBtn(guessing)
         updateVids(guessing)
+      }
+
+      if (guess_list) {
+        let lst = JSON.parse(guess_list)
+        console.log("PARSED_GUESS_LIST: ", lst.guess_list)
+        lst.push(guess)
+
+        console.log("ARR: ", lst);
+        localStorage.setItem("guessList", JSON.stringify(lst))
       }
     }
   }
 
   const iterBtn = (num: number) => {
+
+
     let btn_array = [
       [true, true, true, true, true],
       [false, true, true, true, true],
@@ -239,11 +229,15 @@ function App() {
       [false, false, false, false, false]
     ]
 
+    if (num > btn_array.length - 1) {
+      num = 5
+    }
+
     console.log("ARR: ", btn_array[0])
     setEnableBtns(btn_array[num])
   }
 
-  const checkWeeble = () => {
+  const checkWeeble = (arg_weeb: any) => {
     var url = `http://localhost:3005/`;
     //console.log("TAG: ", weeble.name.name)
     //console.log(check_weeble)
@@ -261,31 +255,43 @@ function App() {
       fetch(url, options)
         .then((res) => {
           return res.json().then((data) => {
-            let weeb: any = localStorage.getItem("Weeble")
-            console.log(weeb)
+            //let weeb: any = localStorage.getItem("Weeble")
+            let weeb = arg_weeb
+
             if (weeb)
               weeb = JSON.parse(weeb)
-              weeb = weeb.title
+            console.log("WEEBLE: ", weeb)
+            let weeb_name = weeb.title
 
-            console.log(`${data["Weeble"].title} = ${weeb}`)
-
-            if (data["Weeble"].title !== weeb) {
+            if (data["Weeble"].title !== weeb_name) {
+              console.log("Weeble != Local Weeble")
               setWeeble(data.Weeble)
-              localStorage.setItem("Weeble", JSON.stringify(data))
+              localStorage.setItem("Weeble", JSON.stringify(data["Weeble"]))
 
               localStorage.setItem("vidNum", "0")
               localStorage.setItem("guessNum", "0")
               let arr: string[] = []
-        
-              localStorage.setItem("guessList", JSON.stringify(arr))
-        
+
+
+              setVideo(data["Weeble"].vid_list[0].file_url)
               setVidNum(0)
               setGuessNum(0)
-              setPrevGuesses([])
-              updateVids(0)
+              localStorage.setItem("guessList", JSON.stringify(arr))
+              //setPrevGuesses([]) // Should pull from local storage
+            } else {
+              //console.log(localStorage.getItem("vidNum"))
+              let guess_num: number = Number(localStorage.getItem("guessNum"))
+              let guesses: any = localStorage.getItem("guessList")
+              //setPrevGuesses(guesses)
+              console.log("GUESS_NUM: ", guess_num)
 
-
-          }})
+              console.log(guesses)
+              iterBtn(guess_num)
+              setWeeble(data["Weeble"])
+              setGuessNum(guess_num)
+              setVideo(data["Weeble"].vid_list[0].file_url)
+            }
+          })
         })
         .catch(handleError);
     }
@@ -294,13 +300,16 @@ function App() {
     }
 
   }
-
+  const revealWeeble = () => {
+    if (weeble)
+      setRevealGuess(weeble.title)
+  }
 
   return (
     <div className="App">
       <h1 className='header'>Weeble</h1>
       <header className="App-header">
-        <img src={imgFile}></img>
+        <img className="image" src={imgFile}></img>
         <ReactPlayer url={video} width="640px" height="360px" controls={true} />
       </header>
 
@@ -323,17 +332,25 @@ function App() {
         <button onClick={() => updateVids(5)} disabled={enableBtns[4]}>
           6
         </button>
-
       </div>
-
-      <input id="anime-guess" list="anime-list" className="anime-guess" value={guess} onChange={e => { setGuess(e.target.value) }} />
-      <div className="anime-list">
-        <datalist id="anime-list">
-          {animeOptions}
-        </datalist>
+      <div>
+        <h3>guesses: {6 - guessNum}</h3>
       </div>
+      <GuessList weeble={weeble} />
 
-      <button className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button>
+
+      {guessNum < 6 ? <>
+        <input id="anime-guess" list="anime-list" className="anime-guess" value={guess} onChange={e => { setGuess(e.target.value) }} />
+        <div className="anime-list">
+          <datalist id="anime-list">
+            {animeOptions}
+          </datalist>
+        </div>
+        <button className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button></>
+        : <>
+          <button className="btn" name="reveal" onClick={revealWeeble}>{revealGuess}</button>
+        </>
+      }
 
     </div>
   );

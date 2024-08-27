@@ -1,0 +1,29 @@
+.guessRed {
+    border: 1px solid red;
+    border-radius: 4px;
+    min-height: 8px;
+    min-width: 240px;
+    color: white;
+
+    margin: 4px;
+
+    padding-left: 4px;
+    padding-right: 4px;
+
+    background-color: red;
+}
+
+.guessGreen {
+    border: 1px solid green;
+    border-radius: 4px;
+    min-height: 8px;
+    min-width: 240px;
+    color: white;
+
+    margin: 4px;
+
+    padding-left: 4px;
+    padding-right: 4px;
+
+    background-color: green;
+}
