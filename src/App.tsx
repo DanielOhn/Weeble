@@ -24,7 +24,6 @@ function App() {
   const [revealGuess, setRevealGuess] = useState<string>("Reveal Weeble")
 
   const [imgFile, setImgFile] = useState<string>("")
-
   const [video, setVideo] = useState<string>("")
   const [vidNum, setVidNum] = useState<number>(0)
 
@@ -32,6 +31,7 @@ function App() {
   const [animeOptions, setAnimeOptions] = useState<any>()
 
   const [enableBtns, setEnableBtns] = useState<any>([true, true, true, true, true])
+  const [copyText, setCopyText] = useState<string>("Copy Results")
 
   function handleResponse(response: any) {
     console.log(response)
@@ -42,10 +42,9 @@ function App() {
         console.log("JSON Data: ", json.Weeble)
         let data = json.Weeble
 
+        setGuessNum(0)
         setWeeble(data)
         localStorage.setItem("Weeble", JSON.stringify(data))
-
-        setGuessNum(0)
         //setPrevGuesses([])
         updateVids(0)
       } else {
@@ -123,7 +122,7 @@ function App() {
         setVideo("")
         setImgFile(url)
       }
-      
+
     }
     //console.log("UPDATE VIDS WEEB: ", weeble)
   }
@@ -179,6 +178,15 @@ function App() {
 
       console.log("GUESS_LIST: ", guess_list)
 
+      if (guess_list) {
+        let lst = JSON.parse(guess_list)
+        console.log("PARSED_GUESS_LIST: ", lst.guess_list)
+        lst.push(guess)
+
+        console.log("ARR: ", lst);
+        localStorage.setItem("guessList", JSON.stringify(lst))
+      }
+
       if (weeble.title === guess) {
         alert("WIN!")
         // unlock all the vids/guesses
@@ -206,14 +214,7 @@ function App() {
         updateVids(guessing)
       }
 
-      if (guess_list) {
-        let lst = JSON.parse(guess_list)
-        console.log("PARSED_GUESS_LIST: ", lst.guess_list)
-        lst.push(guess)
 
-        console.log("ARR: ", lst);
-        localStorage.setItem("guessList", JSON.stringify(lst))
-      }
     }
   }
 
@@ -305,6 +306,28 @@ function App() {
       setRevealGuess(weeble.title)
   }
 
+  const copyResults = () => {
+    let text = `Weeble Result \n`
+
+    let guesses = localStorage.getItem("guessList")
+
+    if (guesses) {
+      let data = JSON.parse(guesses)
+
+      data.map((temp_guess: string) => {
+        console.log(temp_guess)
+        if (temp_guess === weeble?.title) {
+          text += "🟢 "
+        } else {
+          text += "🔴 "
+        }
+      })
+    }
+
+    navigator.clipboard.writeText(text)
+    setCopyText("Copied")
+  }
+
   return (
     <div className="App">
       <h1 className='header'>Weeble</h1>
@@ -349,6 +372,7 @@ function App() {
         <button className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button></>
         : <>
           <button className="btn" name="reveal" onClick={revealWeeble}>{revealGuess}</button>
+          <button className="btn" name="copy" onClick={copyResults}>{copyText}</button>
         </>
       }
 
