@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
+:root {
+  --primary: #B9F5D8;
+  --secondary: #AAD2BA;
+  --tertiary: #6B8F71;
+  --bg-color: #1D1E18;
+  --link: #D9FFF5;
+}
+
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: var(--bg-color);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -63,4 +71,52 @@ h3 {
 .image {
   max-width: 640px;
   max-height: 360px;
+}
+
+.btn {
+  background-color: var(--tertiary);
+  border: none;
+  color: var(--link);
+  
+  width: 96px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.btn:hover {
+  background-color: var(--link);
+
+  color: var(--tertiary);
+}
+
+
+.vid-btns {
+  background-color: var(--tertiary);
+  border: none;
+  color: var(--link);
+  
+  width: 24px;
+  border-radius: 16px;
+  margin: 2px;
+  padding: 4px;
+}
+
+.vid-btns:hover {
+  background-color: var(--link);
+
+  color: var(--tertiary);
+}
+
+.vid-btns:active {
+  color: var(--primary);
+  background-color: var(--tertiary);
+  transform: scale(0.96); 
+  box-shadow: -2px -2px -2px -2px var(--bg-color); 
+}
+
+.vid-btns:disabled {
+  background-color: var(--bg-color);
+  border: none;
+  color: transparent;
+
 }

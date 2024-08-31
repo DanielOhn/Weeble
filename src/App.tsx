@@ -267,7 +267,7 @@ function App() {
             if (data["Weeble"].title !== weeb_name) {
               console.log("Weeble != Local Weeble")
               setWeeble(data.Weeble)
-              localStorage.setItem("Weeble", JSON.stringify(data["Weeble"]))
+              localStorage.setItem("Weeble", JSON.stringify(data.Weeble))
 
               localStorage.setItem("vidNum", "0")
               localStorage.setItem("guessNum", "0")
@@ -337,29 +337,33 @@ function App() {
       </header>
 
       <div>
-        <button onClick={() => updateVids(0)}>
+        <button className="vid-btns" onClick={() => updateVids(0)}>
           1
         </button>
-        <button onClick={() => updateVids(1)} disabled={enableBtns[0]}>
+        <button className="vid-btns" onClick={() => updateVids(1)} disabled={enableBtns[0]}>
           2
         </button>
-        <button onClick={() => updateVids(2)} disabled={enableBtns[1]}>
+        <button className="vid-btns" onClick={() => updateVids(2)} disabled={enableBtns[1]}>
           3
         </button>
-        <button onClick={() => updateVids(3)} disabled={enableBtns[2]}>
+        <button className="vid-btns" onClick={() => updateVids(3)} disabled={enableBtns[2]}>
           4
         </button>
-        <button onClick={() => updateVids(4)} disabled={enableBtns[3]}>
+        <button className="vid-btns" onClick={() => updateVids(4)} disabled={enableBtns[3]}>
           5
         </button>
-        <button onClick={() => updateVids(5)} disabled={enableBtns[4]}>
+        <button className="vid-btns" onClick={() => updateVids(5)} disabled={enableBtns[4]}>
           6
         </button>
       </div>
       <div>
         <h3>guesses: {6 - guessNum}</h3>
       </div>
-      <GuessList weeble={weeble} />
+
+      {weeble ?
+        <GuessList weeble={weeble} /> : <></>
+      }
+      
 
 
       {guessNum < 6 ? <>

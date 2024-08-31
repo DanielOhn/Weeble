@@ -24,18 +24,14 @@ function GuessList(weeb: any) {
         return (<></>)
     } else {
         return (
-            <div className="guess-list">{guessList.map((guess: string) => {
+            <div className="guess-list">{guessList.map((guess: string, ind: number) => {
                 {
-                    
-                    if (weeb && weeb != undefined) {
-                        console.log("TEST:", guess, weeb)
-                        if (guess === weeb.title)
-                            return (<p className="guessGreen">{guess}</p>)
-                        else
-                            return (<p className="guessRed">{guess}</p>)
-                    } else {
-                        return (<p>loading...</p>)
-                    }
+
+                    //console.log(ind)
+                    if (guess === weeb.weeble.title)
+                        return (<p key={ind} className="guessGreen">{guess}</p>)
+                    else
+                        return (<p key={ind} className="guessRed">{guess}</p>)
                 }
             })}
             </div>)
