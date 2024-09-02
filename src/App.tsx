@@ -330,11 +330,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='header'>Weeble</h1>
-      <header className="App-header">
-        <img className="image" src={imgFile}></img>
-        <ReactPlayer url={video} width="640px" height="360px" controls={true} />
-      </header>
+      <div className="header-div">
+        <h1 className='header'>Weeble</h1>
+        {imgFile !== "" ? <img className="image" src={imgFile}></img> :
+          <ReactPlayer url={video} width="640px" height="360px" controls={true} />}
+      </div>
+
 
       <div>
         <button className="vid-btns" onClick={() => updateVids(0)}>
@@ -356,24 +357,26 @@ function App() {
           6
         </button>
       </div>
-      <div>
-        <h3>guesses: {6 - guessNum}</h3>
+      <div className="guessnum-div">
+        <h3>{6 - guessNum}</h3>
+        <p>Guesses Remaining</p>
       </div>
 
       {weeble ?
         <GuessList weeble={weeble} /> : <></>
       }
-      
+
 
 
       {guessNum < 6 ? <>
+        <button className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button>
         <input id="anime-guess" list="anime-list" className="anime-guess" value={guess} onChange={e => { setGuess(e.target.value) }} />
         <div className="anime-list">
           <datalist id="anime-list">
             {animeOptions}
           </datalist>
         </div>
-        <button className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button></>
+      </>
         : <>
           <button className="btn" name="reveal" onClick={revealWeeble}>{revealGuess}</button>
           <button className="btn" name="copy" onClick={copyResults}>{copyText}</button>

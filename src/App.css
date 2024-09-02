@@ -6,25 +6,26 @@
   --tertiary: #6B8F71;
   --bg-color: #1D1E18;
   --link: #D9FFF5;
+
+  background-color: var(--bg-color);
 }
 
 .App {
   text-align: center;
-  background-color: var(--bg-color);
+
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
 }
 
-.App-logo {
-  height: 50vmin;
-  pointer-events: none;
+.header-div {
+  margin: 8px;
 }
 
 .header {
-  color: white;
+  color: var(--secondary);
   font-family: "Nerko One", cursive;
   font-weight: 800;
   font-style: normal;
@@ -44,28 +45,24 @@
   align-items: center;
   justify-content: start;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--link);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  color: var(--primary);
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
 }
-
 
 h3 {
   padding: 0px;
   margin: 0px;
 
-  color: white;
+  color: var(--primary);
 }
 
 .image {
@@ -77,7 +74,8 @@ h3 {
   background-color: var(--tertiary);
   border: none;
   color: var(--link);
-  
+  border-radius: 4px;
+
   width: 96px;
   margin: 4px;
   padding: 4px;
@@ -94,7 +92,7 @@ h3 {
   background-color: var(--tertiary);
   border: none;
   color: var(--link);
-  
+
   width: 24px;
   border-radius: 16px;
   margin: 2px;
@@ -110,13 +108,23 @@ h3 {
 .vid-btns:active {
   color: var(--primary);
   background-color: var(--tertiary);
-  transform: scale(0.96); 
-  box-shadow: -2px -2px -2px -2px var(--bg-color); 
+  transform: scale(0.96);
+  box-shadow: -2px -2px -2px -2px var(--bg-color);
 }
 
 .vid-btns:disabled {
   background-color: var(--bg-color);
   border: none;
   color: transparent;
+}
 
+.anime-guess {
+  min-width: 320px;
+  min-height: 24px;
+}
+
+.guessnum-div {
+  border: 1px var(--secondary) solid;
+  border-radius: 8px;
+  padding: 4px;
 }
