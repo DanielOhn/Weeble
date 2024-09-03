@@ -1,4 +1,4 @@
-//import lore from './lore.jpg';
+import lore from './lore.jpg';
 import { useEffect, useState, ReactNode } from 'react';
 import './App.css';
 import { saveAs } from 'file-saver';
@@ -333,7 +333,12 @@ function App() {
       <div className="header-div">
         <h1 className='header'>Weeble</h1>
         {imgFile !== "" ? <img className="image" src={imgFile}></img> :
-          <ReactPlayer url={video} width="640px" height="360px" controls={true} />}
+          <></>}
+        {video !== "" ? <ReactPlayer url={video} width="640px" height="360px" controls={true} /> :
+          <></>}
+
+        {video === imgFile ? <img className="image" src={lore}></img> : <></>}
+
       </div>
 
 
