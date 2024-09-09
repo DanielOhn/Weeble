@@ -371,8 +371,6 @@ function App() {
         <GuessList weeble={weeble} /> : <></>
       }
 
-
-
       {guessNum < 6 ? <>
         <button className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button>
         <input id="anime-guess" list="anime-list" className="anime-guess" value={guess} onChange={e => { setGuess(e.target.value) }} />
