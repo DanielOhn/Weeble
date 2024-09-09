@@ -1,7 +1,6 @@
 import lore from './lore.jpg';
-import { useEffect, useState, ReactNode } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
-import { saveAs } from 'file-saver';
 
 import animeData from "./sakugabooru-list.json";
 //import animeNames from "./anime-name-list.json";
@@ -18,7 +17,6 @@ interface Weeble {
 
 function App() {
   const [guess, setGuess] = useState<string>("")
-  //const [prevGuesses, setPrevGuesses] = useState<string[]>()
   const [guessNum, setGuessNum] = useState<number>(0)
   const [hideGuess, setHideGuess] = useState<boolean>(false)
   const [revealGuess, setRevealGuess] = useState<string>("Reveal Weeble")
@@ -36,8 +34,7 @@ function App() {
   function handleResponse(response: any) {
     console.log(response)
     return response.json().then(function (json: any) {
-      //return response.ok ? json : Promise.reject(json);
-      //console.log(json)
+
       if (response.ok) {
         console.log("JSON Data: ", json.Weeble)
         let data = json.Weeble
@@ -45,7 +42,7 @@ function App() {
         setGuessNum(0)
         setWeeble(data)
         localStorage.setItem("Weeble", JSON.stringify(data))
-        //setPrevGuesses([])
+        
         updateVids(0)
       } else {
         console.log(response)
