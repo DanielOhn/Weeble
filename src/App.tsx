@@ -58,7 +58,7 @@ function App() {
 
   useEffect(() => {
 
-    var url = `http://localhost:3005/`;
+    var url = `http://server.weeble.xyz/`;
     //console.log("TAG: ", weeble.name.name)
 
     var options = {
@@ -236,7 +236,7 @@ function App() {
   }
 
   const checkWeeble = (arg_weeb: any) => {
-    var url = `http://localhost:3005/`;
+    var url = `http://server.weeble.xyz/`;
     //console.log("TAG: ", weeble.name.name)
     //console.log(check_weeble)
 
