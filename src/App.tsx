@@ -57,8 +57,8 @@ function App() {
 
 
   useEffect(() => {
-
-    var url = `http://server.weeble.xyz/`;
+  
+    var url = `${process.env.REACT_APP_WEEBLE_URL}`;
     //console.log("TAG: ", weeble.name.name)
 
     var options = {
@@ -236,7 +236,7 @@ function App() {
   }
 
   const checkWeeble = (arg_weeb: any) => {
-    var url = `http://server.weeble.xyz/`;
+    var url = `${process.env.REACT_APP_WEEBLE_URL}`;
     //console.log("TAG: ", weeble.name.name)
     //console.log(check_weeble)
 
@@ -312,7 +312,7 @@ function App() {
       let data = JSON.parse(guesses)
 
       data.map((temp_guess: string) => {
-        console.log(temp_guess)
+        //console.log(temp_guess)
         if (temp_guess === weeble?.title) {
           text += "🟢 "
         } else {
