@@ -128,3 +128,14 @@ h3 {
   border-radius: 8px;
   padding: 4px;
 }
+
+
+.url-credits {
+  margin-top: 80px;
+
+  color: var(--primary)
+}
+
+.link {
+  color: var(--link);
+}

@@ -304,7 +304,7 @@ function App() {
   }
 
   const copyResults = () => {
-    let text = `Weeble Result \n`
+    let text = `[Weeble Result](https://play.weeble.xyz/) \n`
 
     let guesses = localStorage.getItem("guessList")
 
@@ -319,6 +319,7 @@ function App() {
           text += "🔴 "
         }
       })
+
     }
 
     navigator.clipboard.writeText(text)
@@ -382,6 +383,10 @@ function App() {
           <button className="btn" name="copy" onClick={copyResults}>{copyText}</button>
         </>
       }
+
+      <div className="url-credits">
+        Using <a className="link" href="https://www.sakugabooru.com/">Sakugabooru</a> for the images and mp4 files.
+      </div>
 
     </div>
   );
