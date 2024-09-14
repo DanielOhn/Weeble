@@ -332,7 +332,7 @@ function App() {
         <h1 className='header'>Weeble</h1>
         {imgFile !== "" ? <img className="image" src={imgFile}></img> :
           <></>}
-        {video !== "" ? <ReactPlayer url={video} width="640px" height="360px" controls={true} /> :
+        {video !== "" ? <video className="vid" src={video} controls={true} /> :
           <></>}
 
         {video === imgFile ? <img className="image" src={lore}></img> : <></>}

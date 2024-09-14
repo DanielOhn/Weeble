@@ -10,6 +10,49 @@
   background-color: var(--bg-color);
 }
 
+@media screen and (max-width: 460px) {
+
+  .image {
+    max-width: 320px;
+    max-height: auto;
+  }
+
+  .vid {
+    width: 320px;
+    height: auto;
+  }
+
+
+}
+
+@media screen and (min-width: 460px) {
+
+  .image {
+    max-width: 460px;
+    max-height: auto;
+  }
+
+  .vid {
+    width: 460px;
+    height: auto;
+  }
+
+
+} 
+
+@media screen and (min-width: 640px) {
+  .vid {
+    width: 640px;
+    height: 360px;
+  }
+  
+  .image {
+    max-width: 640px;
+    max-height: 360px;
+  }
+
+}
+
 .App {
   text-align: center;
 
@@ -31,10 +74,6 @@
   font-style: normal;
   font-size: 64px;
   margin: 0;
-}
-
-.anime-guess {
-  width: 24vh;
 }
 
 .App-header {
@@ -65,10 +104,7 @@ h3 {
   color: var(--primary);
 }
 
-.image {
-  max-width: 640px;
-  max-height: 360px;
-}
+
 
 .btn {
   background-color: var(--tertiary);
