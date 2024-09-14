@@ -374,7 +374,9 @@ function App() {
         <input id="anime-guess" list="anime-list" className="anime-guess" value={guess} onChange={e => { setGuess(e.target.value) }} />
         <div className="anime-list">
           <datalist id="anime-list">
-            {animeOptions}
+            <select>
+              {animeOptions}
+            </select>
           </datalist>
         </div>
       </>
