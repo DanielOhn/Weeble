@@ -27,6 +27,10 @@ function App() {
 
   const [weeble, setWeeble] = useState<Weeble | undefined>(undefined)
   const [animeOptions, setAnimeOptions] = useState<any>()
+  const [animeFiltered, setAnimeFiltered] = useState<any>()
+  const [animOpts, setAnimOpts] = useState<any>()
+
+
 
   const [enableBtns, setEnableBtns] = useState<any>([true, true, true, true, true])
   const [copyText, setCopyText] = useState<string>("Copy Results")
@@ -42,7 +46,7 @@ function App() {
         setGuessNum(0)
         setWeeble(data)
         localStorage.setItem("Weeble", JSON.stringify(data))
-        
+
         updateVids(0)
       } else {
         console.log(response)
@@ -57,7 +61,7 @@ function App() {
 
 
   useEffect(() => {
-  
+
     var url = `${process.env.REACT_APP_WEEBLE_URL}`;
     //console.log("TAG: ", weeble.name.name)
 
@@ -133,38 +137,38 @@ function App() {
   }, [weeble?.vid_list, guessNum, vidNum])
 
   // RETURNS ANIME OPTIONS/ SETS IT UP
-  useEffect(() => {
-    const extractNames = () => {
+  // useEffect(() => {
+  //   const extractNames = () => {
 
-      if (animeData.Anime) {
-        let data = animeData.Anime
+  //     if (animeData.Anime) {
+  //       let data = animeData.Anime
 
-        return (
-          <div>
-            {data.map((ani: any) => {
-              //console.log(ani)
-              let tempStr = ani.name
-              tempStr = tempStr.replaceAll("_", " ")
-              for (let i = 0; i < tempStr.length; i++) {
-                if (i === 0 || tempStr[i - 1] === " ") {
-                  let char = tempStr.charAt(i).toUpperCase()
-                  tempStr = tempStr.substring(0, i) + char + tempStr.substring(i + 1)
-                }
-              }
-              return (
-                <option key={ani.id} value={tempStr}></option>
-              )
-            })}
-          </div>
-        )
+  //       return (
+  //         <div>
+  //           {data.map((ani: any) => {
+  //             //console.log(ani)
+  //             let tempStr = ani.name
+  //             tempStr = tempStr.replaceAll("_", " ")
+  //             for (let i = 0; i < tempStr.length; i++) {
+  //               if (i === 0 || tempStr[i - 1] === " ") {
+  //                 let char = tempStr.charAt(i).toUpperCase()
+  //                 tempStr = tempStr.substring(0, i) + char + tempStr.substring(i + 1)
+  //               }
+  //             }
+  //             return (
+  //               <option key={ani.id} value={tempStr}></option>
+  //             )
+  //           })}
+  //         </div>
+  //       )
 
-      } else {
-        return (<p>None</p>)
-      }
+  //     } else {
+  //       return (<p>None</p>)
+  //     }
 
-    }
-    setAnimeOptions(extractNames)
-  }, [])
+  //   }
+  //   setAnimeOptions(extractNames)
+  // }, [])
 
   const guessAnime = () => {
     if (weeble) {
@@ -326,6 +330,83 @@ function App() {
     setCopyText("Copied")
   }
 
+  useEffect(() => {
+    let option_array: string[] = []
+
+    const extractOptions = () => {
+      if (animeData.Anime) {
+        let data = animeData.Anime
+
+        return (
+          <div>
+
+            {data.map((ani: any) => {
+              //console.log(ani)
+              let tempStr = ani.name
+              tempStr = tempStr.replaceAll("_", " ")
+              for (let i = 0; i < tempStr.length; i++) {
+                if (i === 0 || tempStr[i - 1] === " ") {
+                  let char = tempStr.charAt(i).toUpperCase()
+                  tempStr = tempStr.substring(0, i) + char + tempStr.substring(i + 1)
+                }
+              }
+              
+              if (!option_array.includes(tempStr)) 
+                option_array.push(tempStr)
+              //option_array.push(tempStr)
+              return (
+                <button key={ani.id} onClick={() => { setGuess(tempStr) }}>{tempStr}</button>
+              )
+            })}
+          </div>
+        )
+
+      } else {
+        return (<p>None</p>)
+      }
+
+    }
+
+    console.log("OPTION ARR:", option_array)
+
+    setAnimeOptions(option_array)
+    setAnimeFiltered(extractOptions)
+  }, [])
+
+  useEffect(() => {
+    if (animeOptions) {
+      const filterOptions = () => {
+
+
+        console.log("OPTIONS: ", animeOptions)
+        let options = animeOptions.filter((anim: any) => {
+          return anim.toLowerCase().includes(guess.toLowerCase())
+        })
+        
+
+        return (
+          <div>
+            {options.map((ani: any, index: number) => {
+              console.log(ani)
+
+              return (
+                <button key={index} onClick={() => { setGuess(ani) }}>{ani}</button>
+              )
+            })}
+          </div>
+        )
+
+
+      }
+
+      setAnimeFiltered(filterOptions)
+    }
+
+  }, [guess])
+
+
+
+
   return (
     <div className="App">
       <div className="header-div">
@@ -370,18 +451,25 @@ function App() {
       }
 
       {guessNum < 6 ? <>
-        <button className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button>
-        <input id="anime-guess" list="anime-list" className="anime-guess" value={guess} onChange={e => { setGuess(e.target.value) }} />
         <div className="anime-list">
+          <input className='anime-guess' value={guess} onChange={e => { setGuess(e.target.value) }} /> <br />
+          <div className='anime-list-options' >
+            {animeFiltered}
+          </div>
+          <button id= "submit-btn" className="btn" name="guess-button" onClick={guessAnime} hidden={hideGuess}>Submit Guess</button>
+
+
+          {/* 
+          <input id="anime-guess" list="anime-list" className="anime-guess" value={guess} onChange={e => { setGuess(e.target.value) }} />
           <datalist id="anime-list">
             <select>
               {animeOptions}
             </select>
-          </datalist>
+          </datalist> */}
         </div>
       </>
         : <>
-          <button className="btn" name="reveal" onClick={revealWeeble}>{revealGuess}</button>
+          <button id="reveal-btn" className="btn" name="reveal" onClick={revealWeeble}>{revealGuess}</button>
           <button className="btn" name="copy" onClick={copyResults}>{copyText}</button>
         </>
       }

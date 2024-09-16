@@ -38,7 +38,7 @@
   }
 
 
-} 
+}
 
 @media screen and (min-width: 640px) {
   .vid {
@@ -154,6 +154,34 @@ h3 {
   color: transparent;
 }
 
+.anime-list-options {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 320px;
+
+  max-height: 120px;
+
+  overflow: scroll;
+}
+
+.anime-list-options button {
+  border-radius: 0;
+  width: 320px;
+  min-height: 24px;
+
+  padding: 1px;
+  margin: 0px;
+  border: none;
+
+  background-color: var(--tertiary);
+  color: var(--primary);
+}
+
+.anime-list-options button:hover {
+  background-color: var(--primary);
+  color: var(--tertiary);
+}
+
 .anime-guess {
   min-width: 320px;
   min-height: 24px;
@@ -168,10 +196,25 @@ h3 {
 
 .url-credits {
   margin-top: 80px;
-
   color: var(--primary)
 }
 
 .link {
   color: var(--link);
 }
+
+#submit-btn {
+  height: 32px;
+}
+
+#reveal-btn {
+  width: auto;
+}
+
+.btn:active {
+  color: var(--primary);
+  background-color: var(--tertiary);
+  transform: scale(0.96);
+  box-shadow: -2px -2px -2px -2px var(--bg-color);
+}
+
